@@ -1,0 +1,2 @@
+class AssaultCategory < ApplicationRecord
+end
