@@ -1,0 +1,5 @@
+<h1>These are all the Protests</h1>
+<% @protests.each do |protest| %>
+<h3><%= protest.date %> - <%=protest.time %></h3>
+<p><%= protest.description  %></p>
+<% end %>
