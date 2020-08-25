@@ -1,6 +1,12 @@
 class ProtestsController < ApplicationController
   def index
     @protests = Protest.all
+    @markers = @protests.map do |protest|
+      {
+        lat: protest.station.latitude
+        lng: protest.station.longitude
+      }
+    end
   end
 
   def show
