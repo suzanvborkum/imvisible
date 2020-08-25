@@ -15,6 +15,7 @@ class ProtestsController < ApplicationController
 
   def new
     @protest = Protest.new
+    @stations = Station.all
   end
 
   def create
@@ -29,6 +30,6 @@ class ProtestsController < ApplicationController
   private
 
   def strong_params
-    params.require(:protest).permit(:experienced, :date, :time, :description, :station)
+    params.require(:protest).permit(:experienced, :date, :time, :description, :station_id)
   end
 end
