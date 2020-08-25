@@ -1,5 +1,4 @@
-<h1>These are all the Protests</h1>
-<% @protests.each do |protest| %>
-<h3><%= protest.date %> - <%=protest.time %></h3>
-<p><%= protest.description  %></p>
-<% end %>
+<div id="map"
+     style="width: 100%; height: 700px;"
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
