@@ -3,9 +3,23 @@
      data-markers="<%= @markers.to_json %>"
      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
 
-<!-- <div class="list-protests">
-  <% @protests.each do |protest| %>
-    <h2 class="protest-description"> <%= protest.description %> </h2>
+<div class="list-protests" id="accordion">
+  <% @protests.each_with_index do |protest, index| %>
+    <div class="protest-header collapsed" id="heading" data-toggle="collapse" data-target="#collapseText" role="button" aria-controls="collapseText">
+      <h2 class="protest-date" ><%= protest.date %> / </h2>
+      <h2 class="protest-description"><%= protest.description %> </h2>
+    </div>
+    <div class="protest-info" id="#collapseText" class="collapse" aria-labelledby="heading" data-parent="#accordion">
+      <p class="full-description"><%= protest.description %></p>
+      <div class="protest-details">
+        <p> <i class="fas fa-subway"></i> <%= protest.station.name %> </p>
+        <p> <i class="far fa-clock"></i> <%= protest.time %></p>
+        <p> <% protest.protest_assaults.each do |protest_assault| %>
+              <i class="fas fa-exclamation"></i>  <%= protest_assault.assault_category.name %>
+            <% end %>
+        </p>
+      </div>
+    </div>
   <% end %>
 </div>
- -->
+
