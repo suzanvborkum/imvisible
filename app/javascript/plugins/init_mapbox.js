@@ -20,7 +20,6 @@ const initMapbox = () => {
     markers.forEach((marker) => {
     const popup = new mapboxgl.Popup().setHTML(marker.infoWindow);
 
-
       const element = document.createElement('div');
       const textElement = document.createTextNode(`${marker.number_of_protests}`);
 
