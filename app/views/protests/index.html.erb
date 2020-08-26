@@ -1,4 +1,11 @@
 <div id="map"
-     style="width: 100%; height: 700px;"
+     style="width: 100%; height: 98vh;"
      data-markers="<%= @markers.to_json %>"
      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+
+<!-- <div class="list-protests">
+  <% @protests.each do |protest| %>
+    <h2 class="protest-description"> <%= protest.description %> </h2>
+  <% end %>
+</div>
+ -->

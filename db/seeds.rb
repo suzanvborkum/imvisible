@@ -30,7 +30,6 @@ end
     )
 end
 
-#
 Protest.all.each do |protest|
   categories = AssaultCategory.all
   rand(1..3).times do
@@ -44,3 +43,4 @@ Protest.all.each do |protest|
     end
   end
 end
+
