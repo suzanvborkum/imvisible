@@ -24,6 +24,33 @@
   align-items: center;
   justify-content: center;
   color: white;
+  z-index: 11;
+  position: absolute;
+  top: 0;
+}
+
+.marker-container {
+}
+
+@keyframes pulse {
+  0% {
+    transform:scale(1);
+  }
+  50% {
+    transform:scale(4);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+
+.marker-pulse {
+  background-color: red;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  transform-origin: 50% 50%;
+  animation: pulse 3s infinite;
 }
 
 .popup-text a {
