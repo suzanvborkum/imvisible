@@ -7,7 +7,6 @@ class ProtestsController < ApplicationController
         lat: protest.station.latitude,
         lng: protest.station.longitude,
         infoWindow: render_to_string(partial: "info_window", locals: { protest: protest })
-        # image_url: helpers.asset_url('circle.png')
       }
     end
   end
@@ -32,7 +31,14 @@ class ProtestsController < ApplicationController
 
   private
 
+  def build_geojson
+    {
+      type: "FeatureCollection",
+      features: @protests.map(&:to_feature)
+    }
+  end
+
   def strong_params
-    params.require(:protest).permit(:experienced, :date, :time, :description, :station_id)
+    params.require(:protest).permit(:experienced, :date, :time, :description, :station_id, assault_category_ids: [])
   end
 end

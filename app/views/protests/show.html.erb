@@ -1,3 +1,8 @@
 <h1>This is your Protest</h1>
 <h3><%= @protest.date %> - <%= @protest.time %></h3>
 <p><%= @protest.description %></p>
+<p>type of assault:
+  <% @protest.protest_assaults.each do |protest_assault| %>
+      <%= protest_assault.assault_category.name %>
+  <% end %>
+</p>

@@ -1,11 +1,11 @@
 require 'open-uri'
 require 'json'
+require 'faker'
 
 Protest.destroy_all
 ProtestAssault.destroy_all
 AssaultCategory.destroy_all
 Station.destroy_all
-
 
 assault_categories = %w(verbal touching following photos catcalling rape)
 assault_categories.each do |category|
@@ -20,3 +20,10 @@ JSON.parse(open(url).read)["records"].each do |station|
   Station.create!(name: name, longitude: longitude, latitude: latitude)
 end
 
+Protest.create!(
+  experienced: true,
+  date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+  time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+  description: 'test',
+  station: Station.order('RANDOM()').first
+  )
