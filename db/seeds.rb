@@ -20,10 +20,27 @@ JSON.parse(open(url).read)["records"].each do |station|
   Station.create!(name: name, longitude: longitude, latitude: latitude)
 end
 
-Protest.create!(
-  experienced: true,
-  date: Faker::Date.between(from: 30.days.ago, to: Date.today),
-  time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
-  description: 'test',
-  station: Station.order('RANDOM()').first
-  )
+50.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: 'test',
+    station: Station.order('RANDOM()').first
+    )
+end
+
+#
+Protest.all.each do |protest|
+  categories = AssaultCategory.all
+  rand(1..3).times do
+    protest_assault = ProtestAssault.new
+    protest_assault.assault_category = categories.sample
+    protest_assault.protest = protest
+    begin
+      protest_assault.save!
+    rescue
+      next
+    end
+  end
+end
