@@ -1,12 +1,14 @@
 class ProtestsController < ApplicationController
   def index
     @protests = Protest.all
+    @stations = Station.all
 
-    @markers = @protests.map do |protest|
+    @markers = @stations.map do |station|
       {
-        lat: protest.station.latitude,
-        lng: protest.station.longitude,
-        infoWindow: render_to_string(partial: "info_window", locals: { protest: protest })
+        lat: station.latitude,
+        lng: station.longitude,
+        infoWindow: render_to_string(partial: "info_window", locals: { station: station }),
+        number_of_protests: Protest.where(station_id: station).count
       }
     end
   end

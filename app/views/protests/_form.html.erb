@@ -1,7 +1,7 @@
 <%= simple_form_for @protest do |f| %>
+  <%= f.input :experienced, as: :radio_buttons %>
   <%= f.input :date %>
   <%= f.input :time %>
-  <%= f.input :experienced, as: :radio_buttons %>
   <%= f.association :station, as: :select %>
   <%= f.input :description %>
   <%= f.association :assault_categories, as: :check_boxes %>
