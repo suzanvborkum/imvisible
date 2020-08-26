@@ -1,12 +1,10 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.fa-bars {
+  color: $deepgreen;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.dropdown-item {
+  color: $deepgreen;
+  padding: 5px;
 }
