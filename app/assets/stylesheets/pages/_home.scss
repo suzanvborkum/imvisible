@@ -1,1 +1,78 @@
-// Specific CSS for your home-page
+.header {
+  color: #005243;
+  letter-spacing: 10px;
+  font-size: 40px;
+  padding-top: 50px;
+  font-weight: normal;
+}
+
+.subheader {
+  color: #005243;
+  line-height: 2.4;
+  font-size: 28px;
+  margin-top: 18px;
+}
+
+.container {
+  margin: 20px 20px;
+  padding: 0px 10px;
+}
+
+#circle {
+    background: #CBBCDC;
+    border-radius: 50%;
+    width: 550px;
+    height: 550px;
+    z-index: -1;
+    opacity: 90%;
+}
+
+#small-circle {
+    background: #CBBCDC;
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
+    z-index: -1;
+    opacity: 90%;
+}
+
+.protest-button {
+  font-family: $body-font;
+  color: #003D32;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border-color: #003D32;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: transparent;
+  margin: 18px 0px 0px 0px;
+  z-index: 2;
+  transition: background-color 0.5s ease;
+}
+
+.protest-button:active {
+  background-color: #003D32;
+  color: white;
+}
+
+.button-div {
+  text-align: center;
+  height: 200px;
+}
+
+.arrow {
+  border: solid #CBBCDC;
+  border-width: 0 .04px .04px 0;
+  display: inline-block;
+  padding: 28px;
+  margin: auto;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
+}
+
+.arrow-position {
+  text-align: center;
+}
+
+
