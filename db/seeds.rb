@@ -20,7 +20,7 @@ JSON.parse(open(url).read)["records"].each do |station|
   Station.create!(name: name, longitude: longitude, latitude: latitude)
 end
 
-Protest.create!(
+protest1 = Protest.create!(
   experienced: true,
   date: Faker::Date.between(from: 30.days.ago, to: Date.today),
   time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),

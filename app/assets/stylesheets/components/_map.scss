@@ -19,7 +19,8 @@
 
 .marker {
   border-radius: 50%;
-  background-color: #003D32;
+  background-color: rgba(203, 188, 220, 1);
+  border: solid 1px #003D32;
 }
 
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
