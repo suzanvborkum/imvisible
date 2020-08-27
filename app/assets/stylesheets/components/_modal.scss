@@ -1,0 +1,30 @@
+.modal-content {
+  background-color: rgba(203, 188, 220, 0.9);
+  align-items: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modal-header {
+  border: none;
+}
+
+.modal-title {
+  font-size: 16px;
+  color: #003D32;
+}
+
+.modal-footer {
+  border: none;
+}
+
+.see-results {
+  background-color: transparent;
+  border-color: #003D32;
+  color: #003D32;
+  transition: background-color 0.5s ease;
+}
