@@ -42,9 +42,9 @@ const initMapbox = () => {
       element.dataset.size = sizes.large;
       element.style.width = `${sizes.large}px`;
       element.style.height = `${sizes.large}px`;
-      backgroundElement.dataset.size = sizes.large;
-      backgroundElement.style.width = `${sizes.large}px`;
-      backgroundElement.style.height = `${sizes.large}px`;
+      backgroundElement.dataset.size = sizes.large ;
+      backgroundElement.style.width = `${sizes.large }px`;
+      backgroundElement.style.height = `${sizes.large }px`;
       element.style.fontSize = `${sizes.large - 10}px`;
       } else if (marker.number_of_protests > 5) {
         element.dataset.size = sizes.medium;
