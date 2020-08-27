@@ -3,9 +3,10 @@ class ProtestsController < ApplicationController
     if params[:search_station]
       @protests = Protest.where(station_id: params[:search_station])
     elsif params[:start_date]
-      @protests = Protest.where(date: params[:start_date])
+      date = Date.new(params[:start_date][:year].to_i, params[:start_date][:month].to_i, params[:start_date][:day].to_i)
+      @protests = Protest.where(date: date)
     elsif params[:search_category]
-      @protests = Protest.where(assault_category_id: params[:search_category])
+      @protests = Protest.joins(:protest_assaults).where(protest_assaults: { assault_category_id: params[:search_category] })
     else
       @protests = Protest.all
     end
