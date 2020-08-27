@@ -1,6 +1,14 @@
 class ProtestsController < ApplicationController
   def index
-    @protests = Protest.all
+    if params[:search_station]
+      @protests = Protest.where(station_id: params[:search_station])
+    elsif params[:start_date]
+      @protests = Protest.where(date: params[:start_date])
+    elsif params[:search_category]
+      @protests = Protest.where(assault_category_id: params[:search_category])
+    else
+      @protests = Protest.all
+    end
     @stations = Station.all
 
     @markers = @stations.map do |station|
