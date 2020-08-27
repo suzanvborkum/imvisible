@@ -17,6 +17,18 @@
   padding: 20px;
 }
 
+@keyframes markerPulse {
+  0% {
+    transform:scale(1);
+  }
+  50% {
+    transform:scale(1.5);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+
 .marker {
   border-radius: 50%;
   background-color: #003D32;
@@ -24,6 +36,27 @@
   align-items: center;
   justify-content: center;
   color: white;
+  z-index: 11;
+  position: absolute;
+  top: 0;
+}
+
+
+
+.marker-container {
+}
+
+
+.marker-pulse {
+  background-color: #003D32;
+  opacity: 0.2;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  // border-radius: 50%;
+  z-index: 10;
+  transform-origin: 50% 50%;
+  animation: markerPulse 3s infinite;
 }
 
 .popup-text a {
