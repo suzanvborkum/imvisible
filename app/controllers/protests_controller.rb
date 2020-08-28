@@ -8,7 +8,7 @@ class ProtestsController < ApplicationController
     elsif params[:search_category]
       @protests = Protest.joins(:protest_assaults).where(protest_assaults: { assault_category_id: params[:search_category] })
     else
-      @protests = Protest.all
+      @protests = Protest.all.order(date: :desc)
     end
     @stations = Station.all
 
