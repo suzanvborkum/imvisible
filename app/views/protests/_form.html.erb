@@ -1,9 +1,84 @@
 <%= simple_form_for @protest do |f| %>
-  <%= f.input :experienced, as: :radio_buttons %>
-  <%= f.input :date %>
-  <%= f.input :time %>
-  <%= f.association :station, as: :select %>
-  <%= f.input :description %>
-  <%= f.association :assault_categories, as: :check_boxes %>
-  <%= f.button :submit, "Protest Now", class: 'btn' %>
+    <!-- Witness -->
+    <div class="experienced-select flex-50">
+      <div class="form-check-experienced">
+        <input class="form-check-experienced-input radio_buttons optional" type="radio" value="0" name="protest[experienced]" id="protest_experienced_0">
+        <label class="form-check-experienced-label collection_radio_button experience-label" for="protest_experienced_0">
+          I EXPERIENCED
+        </label>
+      </div>
+      <div class="form-check-experienced">
+        <input class="form-check-experienced-input radio_buttons optional" type="radio" value="1" name="protest[experienced]" id="protest_experienced_1">
+        <label class="form-check-experienced-label collection_radio_buttons experience-label" for="protest_experienced_1">
+          I WITNESSED
+        </label>
+      </div>
+    </div>
+    <div id="select-station-container">
+      <%= f.association :station, as: :select, label_html: { class:"no-label " } %>
+    </div>
+    <div class="flex-50">
+      <div class="date-select">
+        <%= f.input :date, wrapper_html: { class: 'flex-select' }, as: :date, html5: true, label_html: { class:"no-label" } %>
+      </div>
+      <div class="time-select">
+        <%= f.input :time, placeholder: "7:00 - 8:00", label_html: { class:"no-label" } %>
+      </div>
+    </div>
+
+    <div class="row assault-options1">
+      <div class="col-xs-6">
+        <div class="form-check">
+          <input class="form-check-input check_boxes optional" type="checkbox" value="10" name="protest[assault_category_ids][]" id="protest_assault_category_ids_10">
+          <label class="form-check-label collection_check_boxes" for="protest_assault_category_ids_10">
+            Verbal
+          </label>
+        </div>
+      <div class="form-check">
+        <input class="form-check-input check_boxes optional" type="checkbox" value="11" name="protest[assault_category_ids][]" id="protest_assault_category_ids_11">
+        <label class="form-check-label collection_check_boxes" for="protest_assault_category_ids_11">
+          Touching
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input check_boxes optional" type="checkbox" value="12" name="protest[assault_category_ids][]" id="protest_assault_category_ids_12">
+        <label class="form-check-label collection_check_boxes" for="protest_assault_category_ids_12">
+          Following
+        </label>
+      </div>
+      </div>
+    <div class="row assault-options2">
+      <div class="col-xs-6">
+      <div class="form-check">
+        <input class="form-check-input check_boxes optional" type="checkbox" value="13" name="protest[assault_category_ids][]" id="protest_assault_category_ids_13">
+        <label class="form-check-label collection_check_boxes" for="protest_assault_category_ids_13">
+          Photos
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input check_boxes optional" type="checkbox" value="14" name="protest[assault_category_ids][]" id="protest_assault_category_ids_14">
+        <label class="form-check-label collection_check_boxes" for="protest_assault_category_ids_14">
+          Catcalling
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input check_boxes optional" type="checkbox" value="15" name="protest[assault_category_ids][]" id="protest_assault_category_ids_15">
+        <label class="form-check-label collection_check_boxes" for="protest_assault_category_ids_15">
+          Rape
+        </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="description-box">
+    <%= f.input :description, placeholder: "Tell us what happened...", label_html: { class:"no-label" }  %>
+  </div>
+  <div class="center-button">
+    <%= f.button :submit, "Protest", class: 'btn protest-btn' %>
+  </div>
 <% end %>
+
+
+
+
