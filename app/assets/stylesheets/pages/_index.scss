@@ -52,3 +52,29 @@
   border-color:  rgba(203, 188, 220, 1);
   color:  rgba(203, 188, 220, 1);
 }
+
+.map-container {
+  position: relative;
+}
+
+.goto-index {
+  position: absolute;
+  left: 35%;
+  bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: #003D32;
+  color: #003D32;
+  padding: 5px;
+}
+
+.goto-map {
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-color:  rgba(203, 188, 220, 1);
+  color:  rgba(203, 188, 220, 1);
+}
+
+.index-buttons {
+  display: flex;
+  justify-content: space-between;
+}
