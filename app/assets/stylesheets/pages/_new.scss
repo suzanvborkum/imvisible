@@ -1,0 +1,133 @@
+.flex-50 {
+  display: flex;
+}
+
+.flex-50 > div, .flex-50 > input {
+  flex-basis: 50%;
+}
+
+.experience-label {
+  width: 100%;
+  text-align: center;
+}
+
+#select-station-container {
+  width: 100%;
+}
+
+#select-station-container select {
+  width: 100%;
+}
+
+.all-new-wrapper {
+  background-color: $purplevisible;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.circle-form {
+  position: absolute;
+  bottom: -150px;
+  left: 150px;
+  background: $deepgreen;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  z-index: -1;
+}
+
+.form-protest {
+  margin-top: 15px;
+  position: relative;
+    h1 {
+      color: $deepgreen;
+      font-size: 36px;
+  }
+}
+
+#form_protest input {
+  width: 100%;
+}
+
+.experienced-select {
+  display: flex;
+  justify-content: space-around;
+}
+
+// .form-check-experienced {
+//   margin-right: 10px;
+//   width: 180px
+// }
+
+.form-check {
+  padding-left: 0px;
+}
+
+.no-label {
+  display:none;
+}
+
+.form-check-experienced-input {
+  display: none
+}
+
+.form-check-experienced-label {
+  border: 1px solid #DDD;
+  color: $deepgreen;
+  background-color: white;
+  border-radius:5px;
+  padding:10px;
+  margin-top:10px;
+  position:relative;
+}
+
+.form-check-experienced-label:active {
+  background-color: #003D32;
+  color: white;
+}
+
+.form-group .select .required .protest-station label {
+  display: none;
+}
+
+.simple_form div.input:focus {
+    border-color: transparent;
+}
+
+.row  {
+  justify-content: space-evenly;
+}
+
+.center-button {
+  position: relative;
+  justify-content: center;
+}
+
+.protest-btn {
+  font-family: $body-font;
+  position: absolute;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border-color: white;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: transparent;
+  margin: 18px 0px 0px 0px;
+  z-index: 1;
+  transition: background-color 0.5s ease;
+}
+
+.assault-options1 {
+  text-align: center;
+}
+
+.description-box {
+  margin-top: 10px;
+}
+
+.protest-btn:active {
+  background-color: #003D32;
+  color: white;
+}
