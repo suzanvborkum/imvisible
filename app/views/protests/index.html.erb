@@ -1,12 +1,19 @@
-<div id="map"
-     style="width: 100%; height: 90vh;"
-     data-markers="<%= @markers.to_json %>"
-     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+<div class="map-container">
+  <div id="map"
+       style="width: 100%; height: 100vh;"
+       data-markers="<%= @markers.to_json %>"
+       data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+
+  <button class="btn goto-index">See all protests</button>
+</div>
 
 <div class="list-protests" id="accordion">
-  <button type="button" class="btn filter-button" data-toggle="modal" data-target="#exampleModalCenter">
-  Filter protests
-  </button>
+  <div class="index-buttons">
+    <button class="btn goto-map">See the map</button>
+    <button type="button" class="btn filter-button" data-toggle="modal" data-target="#exampleModalCenter">
+    Filter protests
+    </button>
+  </div>
 
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">

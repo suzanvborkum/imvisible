@@ -1,1 +1,1 @@
-<a class="popup-text" href="">See all protests at <%= station.name %> station</a>
+<%= link_to "See all protests at #{station.name } station", protests_path(@protests.where(station_id: station.id)), class:"popup-text" %>
