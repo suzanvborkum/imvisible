@@ -34,7 +34,8 @@ class ProtestsController < ApplicationController
   def create
     @protest = Protest.new(strong_params)
     if @protest.save
-      redirect_to protest_path(@protest)
+      flash[:notice] = 'Successfully checked in'
+      redirect_to protests_path
     else
       render :new
     end
