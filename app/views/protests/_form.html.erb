@@ -28,46 +28,14 @@
 
     <div class="row assault-options1">
       <div class="col-xs-6">
-        <div class="form-check">
-          <input class="form-check-input check_boxes optional" type="checkbox" value="10" name="protest[assault_category_ids][]" id="protest_assault_category_ids_10">
-          <label class="form-check-label collection_check_boxes" for="protest_assault_category_ids_10">
-            Verbal
-          </label>
-        </div>
-      <div class="form-check">
-        <input class="form-check-input check_boxes optional" type="checkbox" value="11" name="protest[assault_category_ids][]" id="protest_assault_category_ids_11">
-        <label class="form-check-label collection_check_boxes" for="protest_assault_category_ids_11">
-          Touching
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input check_boxes optional" type="checkbox" value="12" name="protest[assault_category_ids][]" id="protest_assault_category_ids_12">
-        <label class="form-check-label collection_check_boxes" for="protest_assault_category_ids_12">
-          Following
-        </label>
-      </div>
-      </div>
-    <div class="row assault-options2">
-      <div class="col-xs-6">
-      <div class="form-check">
-        <input class="form-check-input check_boxes optional" type="checkbox" value="13" name="protest[assault_category_ids][]" id="protest_assault_category_ids_13">
-        <label class="form-check-label collection_check_boxes" for="protest_assault_category_ids_13">
-          Photos
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input check_boxes optional" type="checkbox" value="14" name="protest[assault_category_ids][]" id="protest_assault_category_ids_14">
-        <label class="form-check-label collection_check_boxes" for="protest_assault_category_ids_14">
-          Catcalling
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input check_boxes optional" type="checkbox" value="15" name="protest[assault_category_ids][]" id="protest_assault_category_ids_15">
-        <label class="form-check-label collection_check_boxes" for="protest_assault_category_ids_15">
-          Rape
-        </label>
-        </div>
-      </div>
+        <% AssaultCategory.all.each do |category| %>
+          <div class="form-check">
+            <input class="form-check-input check_boxes optional" type="checkbox" value="<%= category.id %>" name="protest[assault_category_ids][]" id="protest_assault_category_ids_<%= category.id %>">
+            <label class="form-check-label collection_check_boxes" for="protest_assault_category_ids_<%= category.id %>">
+              <%= category.name.capitalize %>
+            </label>
+          </div>
+        <% end %>
     </div>
   </div>
 
