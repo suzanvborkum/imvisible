@@ -12,7 +12,7 @@ assault_categories.each do |category|
   AssaultCategory.create!(name: category)
 end
 
-url = "https://datos.cdmx.gob.mx/api/records/1.0/search/?dataset=estaciones-del-metro&q=&rows=50"
+url = "https://datos.cdmx.gob.mx/api/records/1.0/search/?dataset=estaciones-del-metro&q=&rows=25"
 JSON.parse(open(url).read)["records"].each do |station|
   name = station["fields"]["name"]
   longitude = station["fields"]["lon"]
