@@ -4,8 +4,12 @@
   padding: 10px;
 }
 
+body {
+  padding-top: 0px;
+}
+
 .protest-description {
-  color: white;
+  color: $light-gray;
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -14,16 +18,23 @@
   text-overflow: ellipsis;
   max-width: 400px;
   font-weight: light;
+  font-family: $headers-font;
+  font-weight: 200;
 }
 
 .protest-date {
-  color: white;
+  font-weight: 200;
+  font-family: $headers-font;
+  color: $light-gray;
   font-size: 32px;
   text-transform: uppercase;
 }
 
 .full-description {
-  color: white;
+  font-family: $body-font;
+  font-weight: 200;
+  color: $light-gray;
+  padding: 0px 15px;
 }
 
 .protest-info {
@@ -31,5 +42,60 @@
 }
 
 .protest-details {
+  font-family: $body-font;
+  font-weight: 500;
   color: rgba(203, 188, 220, 1);
+  padding: 0px 15px;
+}
+
+.filter-button {
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-color:  rgba(203, 188, 220, 1);
+  color:  rgba(203, 188, 220, 1);
+}
+
+.map-container {
+  position: relative;
+  margin-top: 0px;
+}
+
+.goto-map {
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-color:  rgba(203, 188, 220, 1);
+  color:  rgba(203, 188, 220, 1);
+}
+
+.index-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+}
+
+.section::before {
+  animation: arrowBounce 1.5s ease infinite;
+  bottom: 2rem;
+  color: lightgrey;
+  content: '╲╱';
+  font-size: 2rem;
+  height: 4rem;
+  left: 50%;
+  letter-spacing: -1px;
+  line-height: 4rem;
+  margin-left: -3rem;
+  opacity: 0.8;
+  position: absolute;
+  text-align: center;
+  width: 6rem;
+}
+
+@keyframes arrowBounce {
+  50% {
+    transform: translateY(-25%);
+  }
 }
