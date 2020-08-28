@@ -6,6 +6,10 @@
   padding: 10px;
 }
 
+body {
+  padding-top: 0px;
+}
+
 .protest-description {
   color: $light-gray;
   font-size: 20px;
@@ -55,16 +59,7 @@
 
 .map-container {
   position: relative;
-}
-
-.goto-index {
-  position: absolute;
-  left: 35%;
-  bottom: 30px;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-color: #003D32;
-  color: #003D32;
-  padding: 5px;
+  margin-top: 0px;
 }
 
 .goto-map {
@@ -77,4 +72,32 @@
 .index-buttons {
   display: flex;
   justify-content: space-between;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+}
+
+.section::before {
+  animation: arrowBounce 1.5s ease infinite;
+  bottom: 2rem;
+  color: lightgrey;
+  content: '╲╱';
+  font-size: 2rem;
+  height: 4rem;
+  left: 50%;
+  letter-spacing: -1px;
+  line-height: 4rem;
+  margin-left: -3rem;
+  opacity: 0.8;
+  position: absolute;
+  text-align: center;
+  width: 6rem;
+}
+
+@keyframes arrowBounce {
+  50% {
+    transform: translateY(-25%);
+  }
 }
