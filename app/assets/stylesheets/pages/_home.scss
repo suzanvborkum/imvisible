@@ -16,24 +16,32 @@
 .container {
   margin: 20px 20px;
   padding: 0px 10px;
+  justify-content: center;
+  // height: 100vh;
 }
 
 #circle {
     background: #CBBCDC;
     border-radius: 50%;
-    width: 550px;
-    height: 550px;
+    width: 440px;
+    height: 440px;
     z-index: -1;
     opacity: 90%;
+    // position: absolute;
+    // top: 10px;
+    // left: 200px;
 }
 
 #small-circle {
     background: #CBBCDC;
     border-radius: 50%;
-    width: 270px;
-    height: 270px;
+    width: 250px;
+    height: 250px;
     z-index: -1;
     opacity: 90%;
+    // position: absolute;
+    // top: 500px;
+    // left: -60px;
 }
 
 .protest-button {
