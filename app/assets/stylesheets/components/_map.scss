@@ -60,11 +60,9 @@
 }
 
 .popup-text {
-  text-decoration: none;
-  background-color: rgba(203, 188, 220, 1);
-  a {
-    color: #003D32;
-  }
+  background-color: rgba(203, 188, 220, 0.9);
+  color: #003D32;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
