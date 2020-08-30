@@ -1,0 +1,27 @@
+<div class="today_page">
+  <div id="today-big-circle"></div>
+
+  <div id="protest-circle">
+    <p><%= @count_protests %></p>
+    <p>PROTESTS</p>
+  </div>
+
+  <div id="location-cirlce">
+    <p>9</p>
+    <p>LOCATIONS</p>
+  </div>
+
+  <div id="outer-share-circle"></div>
+  <div id="share-circle">
+    <p><%= @count_shares %></p>
+    <p>SHARES</p>
+  </div>
+
+  <div class="today-content">
+    <div class="today-mex-date text-center">
+      <h1 class="today-header">MEXICO CITY</h1>
+      <p class="today-date"><%= Date.today.strftime("%B %d, %Y") %></p>
+    </div>
+    <div class="button-share animate__animated animate__fadeIn"><a href="protests/new"><button type="button" class="protest-button">SHARE</button></a>
+  </div>
+</div>
