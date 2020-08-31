@@ -49,13 +49,15 @@
   color: #003D32;
   padding: 12px 20px;
   border-radius: 8px;
-  border-color: #003D32;
+  // border-color: #003D32;
+  border: none;
   font-size: 30px;
   font-weight: bold;
   background-color: transparent;
   margin: 18px 0px 0px 0px;
   z-index: 2;
   transition: background-color 0.5s ease;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 .protest-button:active {

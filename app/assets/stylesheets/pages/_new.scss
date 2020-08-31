@@ -4,6 +4,7 @@
 
 .flex-50 > div, .flex-50 > input {
   flex-basis: 50%;
+  margin-bottom: 10px;
 }
 
 .experience-label {
@@ -24,26 +25,30 @@
   display: flex;
   height: 100vh;
   width: 100%;
+  z-index: -1;
 }
 
-.circle-form {
+#circle-form-new {
   position: absolute;
-  bottom: -150px;
+  bottom: -222px;
   left: 150px;
   background: $deepgreen;
   border-radius: 50%;
   width: 400px;
   height: 400px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .form-protest {
   margin-top: 15px;
   position: relative;
+  z-index: 2;
     h1 {
       color: $deepgreen;
-      font-size: 36px;
-  }
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
 }
 
 #form_protest input {
@@ -55,14 +60,6 @@
   justify-content: space-around;
 }
 
-// .form-check-experienced {
-//   margin-right: 10px;
-//   width: 180px
-// }
-
-.form-check {
-  padding-left: 0px;
-}
 
 .no-label {
   display:none;
@@ -80,11 +77,14 @@
   padding:10px;
   margin-top:10px;
   position:relative;
-}
-
-.form-check-experienced-label:active {
-  background-color: #003D32;
+  &:hover {
+  background-color: $deepgreen;
   color: white;
+  }
+  &.active {
+  background: $deepgreen;
+  color: white;
+  }
 }
 
 .form-group .select .required .protest-station label {
@@ -99,24 +99,72 @@
   justify-content: space-evenly;
 }
 
-.center-button {
+ul {
+  list-style-type: none;
+  width:12em;
+}
+
+.form-check {
+  display: block;
   position: relative;
+  color: $deepgreen;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  margin: 0px;
+  border-radius: 2px;
+}
+
+input[type="checkbox"]{
+    outline:2px solid grey;
+    outline-offset: -2px;
+}
+
+// input[type='checkbox']{
+//   width: 25px !important;
+//   height: 25px !important;
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   -o-appearance: none;
+//   appearance:none;
+//   outline: 2px solid lightblue;
+//   box-shadow: none;
+//   font-size: 2em;
+// }
+
+.checkmark:hover {
+  background-color: #ccc;
+}
+
+.form-check lable {
+ padding-left: 4px
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+.center-button {
+  display: flex;
   justify-content: center;
 }
 
 .protest-btn {
   font-family: $body-font;
-  position: absolute;
-  color: white;
+  color: $deepgreen;
   padding: 12px 20px;
   border-radius: 8px;
-  border-color: white;
   font-size: 30px;
   font-weight: bold;
-  background-color: transparent;
-  margin: 18px 0px 0px 0px;
-  z-index: 1;
-  transition: background-color 0.5s ease;
+  background-color: $purplevisible;
+  z-index: 2;
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.20);
 }
 
 .assault-options1 {
@@ -125,9 +173,4 @@
 
 .description-box {
   margin-top: 10px;
-}
-
-.protest-btn:active {
-  background-color: #003D32;
-  color: white;
 }
