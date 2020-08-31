@@ -3,13 +3,8 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-
-
 import "animate.css";
-import '@ttskch/select2-bootstrap4-theme/dist/select2-bootstrap4.css'
-
 import "animate.css"
-
 import "bootstrap";
 import "animate.css";
 import { initMapbox } from '../plugins/init_mapbox';

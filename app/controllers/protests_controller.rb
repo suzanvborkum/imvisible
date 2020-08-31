@@ -25,8 +25,8 @@ class ProtestsController < ApplicationController
   def today
     @protests = Protest.all
     @count_protests = Protest.where(date: Date.today).count
-    @count_locations =
-    @count_shares = rand(4..7)
+    @count_locations = Protest.group(:station).where(date: Date.today).count.count
+    @count_shares = rand(6..14)
   end
 
   def show
