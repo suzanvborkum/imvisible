@@ -1,7 +1,7 @@
 .header {
   color: #005243;
   letter-spacing: 10px;
-  font-size: 40px;
+  font-size: 52px;
   padding-top: 50px;
   font-weight: normal;
 }
@@ -10,12 +10,13 @@
   color: #005243;
   line-height: 2.4;
   font-size: 28px;
-  margin-top: 18px;
+  margin: 40px 0;
 }
 
 .container {
-  margin: 20px 20px;
-  padding: 0px 10px;
+  margin: 25px auto;
+  padding: 0px 40px;
+  // justify-text: center;
   justify-content: center;
   // height: 100vh;
 }
@@ -39,6 +40,7 @@
     height: 250px;
     z-index: -1;
     opacity: 90%;
+    // border-color: #322343;
     // position: absolute;
     // top: 500px;
     // left: -60px;
@@ -46,15 +48,17 @@
 
 .protest-button {
   font-family: $body-font;
-  color: #003D32;
-  padding: 12px 20px;
-  border-radius: 8px;
-  border-color: #003D32;
-  font-size: 30px;
+  color: #322343;
+  padding: 14px 20px;
+  border-radius: 10px;
+  border-color: #CBBCDC;
+  border-width: 4px;
+  font-size: 26px;
   font-weight: bold;
-  background-color: transparent;
+  background-color: white;
+  // rgba(0, 82, 67, 0.2); deepgreen
   margin: 18px 0px 0px 0px;
-  z-index: 2;
+  z-index: 4;
   transition: background-color 0.5s ease;
 }
 
