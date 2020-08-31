@@ -96,3 +96,30 @@
   border: 1px solid #CBBCDC;
   border-radius: 50%;
 }
+
+.share-info {
+  color: #003D32;
+  font-weight: light;
+}
+
+.twitter-hashtag-button {
+  margin: 8px 5px 5px 5px;
+}
+
+.fb-share-button {
+  margin: 5px;
+}
+
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.data-label {
+  font-size: 12px;
+}
+
+.data-number {
+  font-size: 20px;
+}
