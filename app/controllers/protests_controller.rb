@@ -22,6 +22,13 @@ class ProtestsController < ApplicationController
     end
   end
 
+  def today
+    @protests = Protest.all
+    @count_protests = Protest.where(date: Date.today).count
+    @count_locations =
+    @count_shares = rand(4..7)
+  end
+
   def show
     @protest = Protest.find(params[:id])
   end
