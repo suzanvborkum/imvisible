@@ -20,6 +20,7 @@ body {
   font-weight: light;
   font-family: $headers-font;
   font-weight: 200;
+  padding: 0px 15px;
 }
 
 .protest-date {
@@ -28,24 +29,25 @@ body {
   color: $light-gray;
   font-size: 32px;
   text-transform: uppercase;
+  padding: 0px 15px;
 }
 
 .full-description {
   font-family: $body-font;
   font-weight: 200;
   color: $light-gray;
-  padding: 0px 15px;
+  padding: 0px 20px;
 }
 
 .protest-info {
-  padding: 0px 15px;
+  padding: 0px 20px;
 }
 
 .protest-details {
   font-family: $body-font;
   font-weight: 500;
   color: rgba(203, 188, 220, 1);
-  padding: 0px 15px;
+  padding: 0px 20px;
 }
 
 .filter-button {
@@ -56,8 +58,17 @@ body {
 }
 
 .map-container {
-  position: relative;
   margin-top: 0px;
+  position: relative;
+  z-index: 12;
+}
+
+.center-bottom {
+  position: absolute;
+  left: 50%;
+  z-index: 13;
+  top: 85%;
+  margin-left: -77px;
 }
 
 .goto-map {
