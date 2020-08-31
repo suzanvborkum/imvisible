@@ -11,6 +11,7 @@ import { initMapbox } from '../plugins/init_mapbox';
 import { initSelect2 } from '../plugins/init_select2';
 import { collapse } from '../components/collapse';
 import { indexScroll, indexScroll2 } from '../components/indexscroll';
+import { activeButton } from '../components/active-button';
 
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
@@ -18,4 +19,5 @@ document.addEventListener('turbolinks:load', () => {
   collapse();
   indexScroll();
   indexScroll2();
+  activeButton();
 });

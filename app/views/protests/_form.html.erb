@@ -7,7 +7,7 @@
           I EXPERIENCED
         </label>
       </div>
-      <div class="form-check-experienced">
+      <div class="form-check-experienced flex-50">
         <input class="form-check-experienced-input radio_buttons optional" type="radio" value="1" name="protest[experienced]" id="protest_experienced_1">
         <label class="form-check-experienced-label collection_radio_buttons experience-label" for="protest_experienced_1">
           I WITNESSED
@@ -29,12 +29,12 @@
     <div class="row assault-options1">
       <div class="col-xs-6">
         <% AssaultCategory.all.each do |category| %>
-          <div class="form-check">
-            <input class="form-check-input check_boxes optional" type="checkbox" value="<%= category.id %>" name="protest[assault_category_ids][]" id="protest_assault_category_ids_<%= category.id %>">
+          <ul class="form-check">
+            <li><span style="white-space: nowrap;"><input class="form-check-input check_boxes optional checkmark" type="checkbox" value="<%= category.id %>" name="protest[assault_category_ids][]" id="protest_assault_category_ids_<%= category.id %>">
             <label class="form-check-label collection_check_boxes" for="protest_assault_category_ids_<%= category.id %>">
-              <%= category.name.capitalize %>
-            </label>
-          </div>
+              <%= category.name.upcase %>
+            </label></span></li>
+          </ul>
         <% end %>
     </div>
   </div>
@@ -46,6 +46,8 @@
     <%= f.button :submit, "Protest", class: 'btn protest-btn' %>
   </div>
 <% end %>
+
+
 
 
 
