@@ -14,8 +14,11 @@
 
 #select-station-container {
   width: 100%;
-  margin-top: 10px;
   margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  height: 28px;
 }
 
 #select-station-container select {
@@ -85,10 +88,12 @@
   background-color: $deepgreen;
   color: white;
   }
-  &.active {
-  background: $deepgreen;
+
+}
+
+.active {
+  background-color: $deepgreen;
   color: white;
-  }
 }
 
 .form-group .select .required .protest-station label {

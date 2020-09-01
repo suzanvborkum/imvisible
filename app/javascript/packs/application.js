@@ -17,7 +17,7 @@ document.addEventListener('turbolinks:load', () => {
   initMapbox();
   initSelect2();
   collapse();
-  indexScroll();
-  indexScroll2();
+  // indexScroll();
+  // indexScroll2();
   activeButton();
 });
