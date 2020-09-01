@@ -48,7 +48,6 @@ class ProtestsController < ApplicationController
 
   def query_protests(category_param, station_param, date_param)
     protests = []
-    # date = Date.new(date_param[:year].to_i, date_param[:month].to_i, date_param[:day].to_i)
 
     if category_param.present?
       protests = Protest.joins(:protest_assaults).where(protest_assaults: { assault_category_id: category_param })

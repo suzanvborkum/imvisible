@@ -7,5 +7,4 @@ class Protest < ApplicationRecord
   validates :date, presence: true
   validates :description, presence: true
   validates :station, presence: true
-
 end
