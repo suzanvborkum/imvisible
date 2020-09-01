@@ -9,16 +9,20 @@
 .subheader {
   color: #005243;
   line-height: 2.4;
-  font-size: 28px;
-  margin: 40px 0;
+  font-size: 25px;
+  margin: 30px 0;
 }
 
 .container {
-  margin: 25px auto;
+  // margin: 25px auto;
   padding: 0px 40px;
   // justify-text: center;
   justify-content: center;
   // height: 100vh;
+}
+
+.intro-text {
+  width: 300px;
 }
 
 #circle {
@@ -70,7 +74,7 @@
 
 .button-div {
   text-align: center;
-  height: 200px;
+  // height: 200px;
 }
 
 .arrow {
