@@ -18,26 +18,29 @@
           </button>
         <div class="modal-body">
           <div class="filter-container">
-            <p class="filter-text">FILTER</p>
+            <p class="filter-text">ADVANCED SEARCH</p>
             <%= render "filter-form" %>
           </div>
           <div class="all-protests">
-            <% @protests.each_with_index do |protest, index| %>
-              <div data-toggle="collapse" id='<%="headingOne"%>' data-target='<%="#collapse#{index}"%>' role="button" aria-expanded="true" aria-controls='<%="collapse"%>'>
-                <h2 class="protest-description"><%= protest.description %></h2>
-                <p class="protest-station"> <i class="fas fa-subway"></i> <%= protest.station.name %> </p>
-              </div>
-              <div id='<%="collapse#{index}"%>' class="collapse show" aria-labelledby='<%="headingOne"%>' data-parent="#accordion">
-              <p class="full-description"><%= protest.description %></p>
-              <div class="protest-details">
-                <p> <i class="far fa-calendar-alt"></i> <%= protest.date.strftime("%B %d, %Y") %> </p>
-                <p> <i class="far fa-clock"></i> <%= protest.time.to_s(:time) %></p>
-                <p> <% protest.protest_assaults.each do |protest_assault| %>
-                  <i class="fas fa-exclamation"></i>  <%= protest_assault.assault_category.name %>
-                <% end %>
-                </p>
-              </div>
-              </div>
+            <% if @protests.count == 0 %>
+              <p class="mt-3">No protests found...</p>
+            <% else %>
+              <% @protests.each_with_index do |protest, index| %>
+                <div data-toggle="collapse" id='<%="headingOne"%>' data-target='<%="#collapse#{index}"%>' role="button" aria-expanded="true" aria-controls='<%="collapse"%>'>
+                  <h2 class="protest-description"><%= protest.description %></h2>
+                  <p class="protest-station"> <i class="fas fa-subway"></i> <%= protest.station.name %> </p>
+                </div>
+                <div id='<%="collapse#{index}"%>' class="collapse show" aria-labelledby='<%="headingOne"%>' data-parent="#accordion">
+                <p class="full-description"><%= protest.description %></p>
+                <div class="protest-details">
+                  <p> <i class="far fa-calendar-alt"></i> <%= protest.date.strftime("%B %d, %Y") %> </p>
+                  <p> <i class="far fa-clock"></i> <%= protest.time.to_s(:time) %></p>
+                  <p> <% protest.protest_assaults.each do |protest_assault| %>
+                    <i class="fas fa-exclamation"></i>  <%= protest_assault.assault_category.name %>
+                  <% end %> </p>
+                </div>
+                </div>
+              <% end %>
             <% end %>
           </div>
         </div>
