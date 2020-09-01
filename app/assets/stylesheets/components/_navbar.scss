@@ -1,6 +1,6 @@
 .fa-bars {
   color: $deepgreen;
-  margin-top: 10px;
+  padding-top: 10px;
   margin-left: 10px;
   font-size: 24px;
 }
@@ -9,3 +9,13 @@
   color: $deepgreen;
   padding: 5px;
 }
+
+.absolute {
+  position: absolute;
+  z-index: 1000;
+}
+
+.overriding {
+  position: sticky !important;
+}
+
