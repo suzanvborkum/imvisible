@@ -43,7 +43,9 @@
     <%= f.input :description, placeholder: "Tell us what happened...", label_html: { class:"no-label" }  %>
   </div>
   <div class="center-button">
-    <%= f.button :submit, "Protest", class: 'btn protest-btn' %>
+    <div class="button-div animate__animated animate__pulse animate__slower animate__infinite">
+      <%= f.button :submit, "Protest Now", class: 'btn protest-btn' %>
+    </div>
   </div>
 <% end %>
 
