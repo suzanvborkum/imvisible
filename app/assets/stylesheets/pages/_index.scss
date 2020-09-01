@@ -12,7 +12,7 @@ body {
   color: $light-gray;
   font-size: 20px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-top: 25px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -23,11 +23,11 @@ body {
   padding: 0px 15px;
 }
 
-.protest-date {
+.protest-station {
   font-weight: 200;
   font-family: $headers-font;
   color: $light-gray;
-  font-size: 32px;
+  font-size: 16px;
   text-transform: uppercase;
   padding: 0px 15px;
 }
@@ -50,13 +50,6 @@ body {
   padding: 0px 20px;
 }
 
-.filter-button {
-  margin-bottom: 20px;
-  background-color: transparent;
-  border-color:  rgba(203, 188, 220, 1);
-  color:  rgba(203, 188, 220, 1);
-}
-
 .map-container {
   margin-top: 0px;
   position: relative;
@@ -68,14 +61,16 @@ body {
   left: 50%;
   z-index: 13;
   top: 85%;
-  margin-left: -77px;
-}
-
-.goto-map {
-  margin-bottom: 20px;
-  background-color: transparent;
-  border-color:  rgba(203, 188, 220, 1);
-  color:  rgba(203, 188, 220, 1);
+  margin-left: -106px;
+  font-family: $body-font;
+  color: #322343;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border-color: #CBBCDC;
+  border-width: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
 }
 
 .index-buttons {

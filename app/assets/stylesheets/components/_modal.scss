@@ -24,13 +24,55 @@
 }
 
 .see-results {
+  margin-top: 15px;
   background-color: transparent;
-  border-color: #003D32;
-  color: white;
+  border-color: #CBBCDC;
+  color: #CBBCDC;
   padding: 5px;
 }
 
-.or-text {
-  font-size: 16px;
-  color: #003D32;
+.filter-container {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #CBBCDC;
 }
+
+#search_station_ {
+  width: 249px;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+#search_category_ {
+  width: 249px;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.filter-text {
+  color: #CBBCDC;
+}
+
+#start_date_year {
+  padding: 8px 4px;
+}
+
+#start_date_month {
+  padding: 8px 4px;
+}
+
+#start_date_day {
+  padding: 8px 4px;
+}
+
+.all-protests {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.close {
+  color: #CBBCDC;
+}
+

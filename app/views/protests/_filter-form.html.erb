@@ -1,18 +1,10 @@
 <%= form_tag protests_path, method: :get do %>
   <%= collection_select :search_station, params[:search_station], Station.all, :id, :name, prompt: "Select Station" %>
-  <%= submit_tag "Search", class: "btn see-results" %>
-<% end %>
-
-<h5 class="or-text">OR</h5>
-
-<%= form_tag protests_path, method: :get do %>
+  <br>
   <%= collection_select :search_category, params[:search_category], AssaultCategory.all, :id, :name, prompt: "Select Assault Type" %>
+  <br>
+  <%= select_date Date.today, prefix: :start_date %>
+  <br>
   <%= submit_tag "Search", class: "btn see-results" %>
 <% end %>
 
-<h5 class="or-text">OR</h5>
-
-<%= form_tag protests_path, method: :get do %>
-  <%= select_date Date.today, prefix: :start_date%>
-  <%= submit_tag "Search", class: "btn see-results" %>
-<% end %>
