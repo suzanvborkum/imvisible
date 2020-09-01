@@ -1,15 +1,11 @@
 class ProtestsController < ApplicationController
   def index
-    if params[:search_station]
-      @protests = Protest.where(station_id: params[:search_station])
-    elsif params[:start_date]
-      date = Date.new(params[:start_date][:year].to_i, params[:start_date][:month].to_i, params[:start_date][:day].to_i)
-      @protests = Protest.where(date: date)
-    elsif params[:search_category]
-      @protests = Protest.joins(:protest_assaults).where(protest_assaults: { assault_category_id: params[:search_category] })
+    if params[:search_category] || params[:search_station] || params[:start_date]
+      @protests = query_protests(params[:search_category], params[:search_station], params[:start_date])
     else
       @protests = Protest.all.order(date: :desc)
     end
+
     @stations = Station.all
 
     @markers = @stations.map do |station|
@@ -49,6 +45,33 @@ class ProtestsController < ApplicationController
   end
 
   private
+
+  def query_protests(category_param, station_param, date_param)
+    protests = []
+    date = Date.new(date_param[:year].to_i, date_param[:month].to_i, date_param[:day].to_i)
+
+    if category_param.present?
+      protests = Protest.joins(:protest_assaults).where(protest_assaults: { assault_category_id: category_param })
+    end
+
+    if station_param
+      if not protests.empty?
+        protests = protests.where(station_id: station_param)
+      else
+        protests = Protest.where(station_id: station_param)
+      end
+    end
+
+    if date_param
+      if not protests.empty?
+        protests = protests.where(date: date)
+      else
+        protests = Protest.where(date: date)
+      end
+    end
+
+    return protests
+  end
 
   def build_geojson
     {
