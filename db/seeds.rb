@@ -12,7 +12,7 @@ assault_categories.each do |category|
   AssaultCategory.create!(name: category)
 end
 
-url = "https://datos.cdmx.gob.mx/api/records/1.0/search/?dataset=estaciones-del-metro&q=&rows=25"
+url = "https://datos.cdmx.gob.mx/api/records/1.0/search/?dataset=estaciones-del-metro&q=&rows=30"
 JSON.parse(open(url).read)["records"].each do |station|
   name = station["fields"]["name"]
   longitude = station["fields"]["lon"]
@@ -26,6 +26,16 @@ end
     date: Faker::Date.between(from: 30.days.ago, to: Date.today),
     time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
     description: "I was walking from line 1 to line 6 in the station when a man started to talk to me. I told him to go away, but he continued to follow me. At the platform I tried to avoid him, but he kept on shouting things to me. Luckily he did not get on the metro when I got on. I hate it that he didn’t just leave me alone.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "I rode the metro back home and was happy to see it was very busy, because I always feel more safe. But this man in his 40s started glaring at me intensely. I tried to focus on my book until he sat next to me. My heart was racing and I decided to jump off at the following station to take the next metro.",
     station: Station.order('RANDOM()').first
     )
 end
@@ -96,6 +106,46 @@ end
     date: Faker::Date.between(from: 30.days.ago, to: Date.today),
     time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
     description: "My best friend was brutally harassed yesterday and I am making the protest for her because she is still too traumatized. She was raped just outside the station when she came home late at night from work. She immediately went to the police afterwards but because she couldn’t describe the predator well, the report was dismissed. My friend is badly hurt and this fucker is still walking around raping women at metro stations. The government does shit. I want to protest every day to get something done.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "These two men in their 50s started talking to me while I was waiting for the metro. I told them that I was not interested in talking, but they kept pushing. I decided the best way was to maybe just make some small talk and they would go away, but that gave them the wrong impression. The following me into the metro and sat next to me. The whole time I kept wondering how to get out of this situation. Luckily they didn’t follow me out of the metro, but the experience was very intrusive.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "It was late at night when I was coming home from a drink when I sat in a nearly empty metro. I had few drinks so I was not paying a lot of attention, but suddenly I noticed that the man a few seats from me was watching me and masturbating. I was so shocked that I could not move for a minute. I asked the nearest person if he could accompany to another part of the metro. He was very sweet, but the incident creeped me out so much.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "Every morning there is a man sitting near the entrance of my station that throws verbal attacks at me. I’m so sick of it and every morning I have to find the courage to go to work, but I refuse to go to another station.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "I wanted to make a protest about all the things that happened to me in the last years. I think norms of public transport are such that it makes us captive victims unable to speak out. I am happy this platform exists.",
     station: Station.order('RANDOM()').first
     )
 end
