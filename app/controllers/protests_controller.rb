@@ -61,7 +61,7 @@ class ProtestsController < ApplicationController
       end
     end
 
-    if date_param
+    if not date_param['day'].empty?
       date = Date.new(date_param[:year].to_i, date_param[:month].to_i, date_param[:day].to_i)
       if not protests.empty?
         protests = protests.where(date: date)

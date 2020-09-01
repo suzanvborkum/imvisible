@@ -39,13 +39,13 @@
   border-bottom: solid 1px #CBBCDC;
 }
 
-#search_station_ {
+.search_station {
   width: 249px;
   margin-bottom: 10px;
   padding: 8px;
 }
 
-#search_category_ {
+.search_category {
   width: 249px;
   margin-bottom: 10px;
   padding: 8px;
@@ -74,5 +74,10 @@
 
 .close {
   color: #CBBCDC;
+}
+
+.restore-link {
+  font-size: 12px;
+  color: grey;
 }
 
