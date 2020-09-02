@@ -150,6 +150,56 @@ end
     )
 end
 
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "I was followed by 2 guys who started taking pictures of me in the metro and got out with me in the same station. Thankfully it was very crowded and I lost them.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "This asshole in a suit grabbed me really hard before stepping out of the metro. I was standing near the door and when he passed by me grabbed me from the back, I let out a scream and when I turned around he was already outside of the train. I started telling him off and he just stared at me like nothing and nobody said anything.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "I was waiting for the bus when this guy came up very close to my face and asked me for money. There was a woman standing close to us and I locked eyes with her. The guy kept there waiting for me to give him money. I got some coins out and gave them to him and he just stood there as if he was analyzing me. He smirked at me and left, but it was very scary he had one hand hidden the entire time.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "I saw a guy walking behind this girl in the station and coming up to her to say something to her ear. He walked past her and moved on while the girl froze.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "A car slowed down next to me when I was close to the station and this guy was yelling disgusting things at me and telling me to come with him. As I got closer to the station the car fully stopped and this other guy from the back and was walking towards me so I ran into the station that was full of people and lost him.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
 Protest.all.each do |protest|
   categories = AssaultCategory.all
   rand(1..3).times do

@@ -61,7 +61,7 @@ body {
   position: absolute;
   left: 50%;
   z-index: 13;
-  top: 85%;
+  top: 80%;
   margin-left: -106px;
   font-family: $body-font;
   color: white;
@@ -105,3 +105,9 @@ body {
     transform: translateY(-25%);
   }
 }
+
+.no-protests {
+  color: white;
+}
+
+
