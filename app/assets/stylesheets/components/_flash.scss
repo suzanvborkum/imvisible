@@ -3,13 +3,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white;
+  background: #CBBCDC;
   box-shadow: 0 0 8px rgba(0,0,0,0.2);
-  border-radius: 20px;
+  border-radius: 25px;
   margin: 100px;
+  color: #322343;
 }
 
 .flash-success {
-  border: 2px solid #CBBCDC;
+  border: 2px solid #322343;
 }
 
