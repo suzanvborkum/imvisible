@@ -4,10 +4,12 @@
   padding: 10px;
 }
 
-.close {
+#close-button {
   position: absolute;
   top: 10px;
   right: 10px;
+  font-size: 40px;
+  color: white;
 }
 
 .modal-header {
@@ -72,12 +74,7 @@
   margin: 0 auto;
 }
 
-.close {
-  color: #CBBCDC;
-}
-
 .restore-link {
   font-size: 12px;
   color: grey;
 }
-

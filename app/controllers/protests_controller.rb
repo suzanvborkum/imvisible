@@ -53,7 +53,7 @@ class ProtestsController < ApplicationController
       protests = Protest.joins(:protest_assaults).where(protest_assaults: { assault_category_id: category_param })
     end
 
-    if station_param
+    if station_param != ['']
       if not protests.empty?
         protests = protests.where(station_id: station_param)
       else
