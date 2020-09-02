@@ -28,21 +28,28 @@
 .all-new-wrapper {
   background-color: $purplevisible;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   z-index: -1;
 }
 
-#circle-form-new {
-  // bottom: -222px;
-  // left: 150px;
-  background: $deepgreen;
-  border-radius: 50%;
-  width: 400px;
-  height: 400px;
-  z-index: 1;
-  overflow: hidden;
-}
+// .containing-circle {
+//   position: absolute;
+// }
+
+// #circle-form-new {
+//   // bottom: -222px;
+//   // left: 150px;
+//   position: fixed;
+//   left: 150px;
+//   bottom:-180px;
+//   background: $deepgreen;
+//   border-radius: 50%;
+//   width: 400px;
+//   height: 400px;
+//   z-index: 1;
+//   overflow: hidden;
+// }
 
 .form-protest {
   margin-top: 15px;
@@ -52,7 +59,7 @@
       color: $deepgreen;
       font-size: 24px;
       text-align: center;
-      margin-top: 30px;
+      margin-top: 50px;
       margin-bottom: 15px;
     }
 }
@@ -134,18 +141,6 @@ input[type="checkbox"]{
     outline-offset: -2px;
 }
 
-// input[type='checkbox']{
-//   width: 25px !important;
-//   height: 25px !important;
-//   -webkit-appearance: none;
-//   -moz-appearance: none;
-//   -o-appearance: none;
-//   appearance:none;
-//   outline: 2px solid lightblue;
-//   box-shadow: none;
-//   font-size: 2em;
-// }
-
 .checkmark:hover {
   background-color: #ccc;
 }
@@ -163,42 +158,22 @@ input[type="checkbox"]{
   justify-content: center;
 }
 
-// .protest-btn {
-//   font-family: $body-font;
-//   color: $deepgreen;
-//   padding: 12px 20px;
-//   border-radius: 8px;
-//   font-size: 30px;
-//   font-weight: bold;
-//   background-color: $purplevisible;
-//   z-index: 2;
-//   box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.20);
-// }
-
-// .protest-btn {
-//   background: linear-gradient(left, $purplevisible, $deepgreen);
-//   font-family: $body-font;
-//   border: none;
-//   padding: 14px 20px;
-//   border-radius: 10px;
-//   border-width: 4px;
-//   font-weight: bold;
-//   margin: 18px 0px 0px 0px
-// }
-
 .protest-btn {
   font-family: $body-font;
-  background-image: linear-gradient(-60deg, #CBBCDC, #322343);
+  background-color: #322343;
   color: white;
   padding: 14px 20px;
   border-radius: 25px;
-  // border-color: #CBBCDC;
-  // border-width: 4px;
-  font-size: 22px;
-  font-weight: bold;
-  // background-color: white;
-  // rgba(0, 82, 67, 0.2); deepgreen
+  font-size: 26px;
+  font-weight: 300;
+  border-radius: 30px;
+  border-width: 4px;
   margin: 18px 0px 0px 0px;
+}
+
+.protest-btn:active {
+  background-color: #003D32;
+  color: white;
 }
 
 .assault-options1 {
