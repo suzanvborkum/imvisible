@@ -54,20 +54,21 @@
 .protest-button {
   font-family: $body-font;
   color: white;
-  padding: 14px 20px;
-  border-radius: 25px;
-  font-size: 26px;
-  font-weight: 300;
+  padding: 12px 22px;
+  border-radius: 35px;
+  font-size: 24px;
+  font-weight: 350;
   background-color: #322343;
-  margin: 18px 0px 0px 0px;
+  margin: 22px 0px 0px 0px;
   z-index: 4;
   border: none;
+  transition: color 2s linear;
 }
 
-.protest-button:active {
-  background-color: #003D32;
-  color: white;
-}
+// .protest-button:active {
+// //   background-color: ;
+// //   color: ;
+// // }
 
 .button-div {
   text-align: center;

@@ -29,12 +29,17 @@
     <div class="row assault-options1">
       <div class="col-xs-6">
         <% AssaultCategory.all.each do |category| %>
-          <ul class="form-check">
+          <label class="label" for="protest_assault_category_ids_<%= category.id %>">
+          <span><%= category.name.upcase %></span>
+          <input type="checkbox" class="checkbox" value="<%= category.id %>" name="protest[assault_category_ids][]" id="protest_assault_category_ids_<%= category.id %>"/>
+          <span class="check-mark"></span>
+          </label>
+          <!-- <ul class="form-check">
             <li><span style="white-space: nowrap;"><input class="form-check-input check_boxes optional checkmark" type="checkbox" value="<%= category.id %>" name="protest[assault_category_ids][]" id="protest_assault_category_ids_<%= category.id %>">
             <label class="form-check-label collection_check_boxes" for="protest_assault_category_ids_<%= category.id %>">
               <%= category.name.upcase %>
             </label></span></li>
-          </ul>
+          </ul> -->
         <% end %>
     </div>
   </div>
