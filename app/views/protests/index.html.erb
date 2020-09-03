@@ -4,7 +4,7 @@
        data-markers="<%= @markers.to_json %>"
        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
   <!-- <button class="btn goto-index">See all protests</button> -->
-  <button type="button" class="btn filter-button center-bottom animate__animated animate__pulse animate__slower animate__infinite" data-toggle="modal" data-target="#protestModalCenter">
+  <button type="button" class="btn filter-button center-bottom" data-toggle="modal" data-target="#protestModalCenter">
     Show All Protests
   </button>
 </div>
@@ -18,20 +18,25 @@
           </button>
         <div class="modal-body">
           <div class="filter-container">
-            <p class="filter-text">FILTERS</p>
-            <%= render "filter-form" %>
+            <div data-toggle="collapse" id="collapseFilter" href="#collapsable" role="button" aria-expanded="true" aria-controls="collapsable">
+              <p class="filter-text"><i class="fas fa-search"></i> FILTER</p>
+            </div>
+            <div id="collapsable" class="collapse show" aria-labelledby="collapseFilter" data-parent="#accordion">
+              <%= render "filter-form" %>
+            </div>
           </div>
           <div class="all-protests">
             <% if @protests.count == 0 %>
               <p class="no-protests mt-3">No protests found...</p>
             <% else %>
+              <h3 class="mt-4 mb-4 text-center imvisible-pink">PROTESTS</h3>
               <% @protests.each_with_index do |protest, index| %>
                 <div data-toggle="collapse" id='<%="headingOne"%>' data-target='<%="#collapse#{index}"%>' role="button" aria-expanded="true" aria-controls='<%="collapse"%>'>
                   <h2 class="protest-description"><%= protest.description %></h2>
                   <p class="protest-station"> <i class="fas fa-subway"></i> <%= protest.station.name %> </p>
                 </div>
                 <div id='<%="collapse#{index}"%>' class="collapse show" aria-labelledby='<%="headingOne"%>' data-parent="#accordion">
-                <p class="full-description"><%= protest.description %></p>
+                  <p class="full-description"><%= protest.description %></p>
                 <div class="protest-details">
                   <p> <i class="far fa-calendar-alt"></i> <%= protest.date.strftime("%B %d, %Y") %> </p>
                   <p> <i class="far fa-clock"></i> <%= protest.time.to_s(:time) %></p>
