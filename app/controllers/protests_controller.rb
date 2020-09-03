@@ -1,5 +1,6 @@
 class ProtestsController < ApplicationController
   def index
+
     if params[:search_category] || params[:search_station] || params[:start_date]
       @protests = query_protests(params[:search_category], params[:search_station], params[:start_date])
     else
@@ -16,6 +17,7 @@ class ProtestsController < ApplicationController
         number_of_protests: Protest.where(station_id: station).count
       }
     end
+
   end
 
   def today
@@ -53,7 +55,7 @@ class ProtestsController < ApplicationController
       protests = Protest.joins(:protest_assaults).where(protest_assaults: { assault_category_id: category_param })
     end
 
-    if station_param != ['']
+    if !station_param.empty?
       if not protests.empty?
         protests = protests.where(station_id: station_param)
       else
@@ -62,8 +64,8 @@ class ProtestsController < ApplicationController
     end
 
     if date_param
-      if !date_param['day'].empty?
-        date = Date.new(date_param[:year].to_i, date_param[:month].to_i, date_param[:day].to_i)
+      if !date_param.empty?
+        date = Date.parse(date_param)
         if !protests.empty?
           protests = protests.where(date: date)
         else
