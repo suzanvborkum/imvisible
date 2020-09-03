@@ -1,7 +1,6 @@
 .header {
   color: #005243;
   letter-spacing: 10px;
-  font-size: 52px;
   padding-top: 50px;
   font-weight: normal;
 }
@@ -9,7 +8,6 @@
 .subheader {
   color: #005243;
   line-height: 2.0;
-  font-size: 25px;
   font-weight: 300;
   margin: 30px 0;
 }
@@ -24,6 +22,25 @@
 
 .intro-text {
   width: 300px;
+}
+
+@media screen and (max-width: 1600px) {
+  .header {
+    font-size: 70px;
+  }
+
+  .subheader {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    font-size: 52px;
+  }
+  .subheader {
+    font-size: 25px;
+  }
 }
 
 #circle {

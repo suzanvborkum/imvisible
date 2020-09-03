@@ -4,6 +4,23 @@
   padding: 10px;
 }
 
+@media (min-width: 620px) {
+  .modal-dialog {
+    max-width: 600px;
+  }
+  .all-protests {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 619px) {
+  .all-protests {
+    width: 315px;
+    margin: 0 auto;
+  }
+}
+
 #close-button {
   position: absolute;
   top: 10px;
@@ -69,10 +86,10 @@
   padding: 8px 4px;
 }
 
-.all-protests {
-  width: 315px;
-  margin: 0 auto;
-}
+// .all-protests {
+//   width: 315px;
+//   margin: 0 auto;
+// }
 
 .restore-link {
   font-size: 12px;
