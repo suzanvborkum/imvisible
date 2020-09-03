@@ -17,8 +17,9 @@
   margin-bottom: 10px;
   background-color: #fff;
   border: 1px solid #ced4da;
-  border-radius: 5px;
-  height: 28px;
+  border-radius: 10px;
+  height: 32px;
+  color: $deepgreen;
 }
 
 #select-station-container select {
@@ -59,8 +60,9 @@
       color: $deepgreen;
       font-size: 24px;
       text-align: center;
-      margin-top: 50px;
+      margin-top: 60px;
       margin-bottom: 15px;
+      font-weight: 650;
     }
 }
 
@@ -86,9 +88,9 @@
   border: 1px solid #DDD;
   color: $deepgreen;
   background-color: white;
-  border-radius:5px;
-  padding:10px;
-  margin-top:10px;
+  border-radius:10px;
+  padding: 8px 8px;
+  margin-top: 10px;
   position:relative;
   &:hover {
   background-color: $deepgreen;
@@ -119,21 +121,38 @@ ul {
   width:12em;
 }
 
-.form-check {
-  display: block;
+// .form-check {
+//   display: block;
+//   position: relative;
+//   color: $deepgreen;
+// }
+
+.checkbox{
+  display: none;
+}
+.label{
   position: relative;
+  font-family: $body-font;
+  display: block;
+  padding-left: 40px;
+  font-size: 18px;
+  user-select: none;
+  margin: 10px 20px;
   color: $deepgreen;
 }
-
-.checkmark {
+.check-mark{
+  width: 15px;
+  height: 15px;
+  background-color: white;
   position: absolute;
+  left:0;
+  display: inline-block;
   top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-  margin: 0px;
-  border-radius: 2px;
+  border-radius: 50%;
+}
+.label .checkbox:checked + .check-mark{
+  background-color: $deepgreen;
+  transition: .1s;
 }
 
 input[type="checkbox"]{
@@ -141,16 +160,18 @@ input[type="checkbox"]{
     outline-offset: -2px;
 }
 
-.checkmark:hover {
-  background-color: #ccc;
-}
+// .checkmark:hover {
+//   background-color: #ccc;
+// }
 
-.form-check lable {
- padding-left: 4px
-}
+// .form-check lable {
+//  padding-left: 4px
+// }
 
 .form-control {
-  border-radius: 5px;
+  border-radius: 15px;
+  color: $deepgreen;
+  padding-right: 16px;
 }
 
 .center-button {
@@ -160,21 +181,22 @@ input[type="checkbox"]{
 
 .protest-btn {
   font-family: $body-font;
-  background-color: #322343;
   color: white;
-  padding: 14px 20px;
-  border-radius: 25px;
-  font-size: 26px;
-  font-weight: 300;
-  border-radius: 30px;
-  border-width: 4px;
-  margin: 18px 0px 0px 0px;
+  padding: 12px 22px;
+  border-radius: 35px;
+  font-size: 24px;
+  font-weight: 350;
+  background-color: #322343;
+  margin: 20px 0px 0px 0px;
+  z-index: 4;
+  border: none;
+  transition: color 2s linear;
 }
 
-.protest-btn:active {
-  background-color: #003D32;
-  color: white;
-}
+// .protest-btn:active {
+//   background-color: #003D32;
+//   color: white;
+// }
 
 .assault-options1 {
   text-align: center;
