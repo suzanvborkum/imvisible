@@ -1,32 +1,33 @@
-<div class="today_page">
-  <div id="today-big-circle"></div>
+<div class="container-fluid page-today m-0 p-0">
+    <div id="today-big-circle"></div>
 
-  <div id="protest-circle">
-    <p class="data-number"><%= @count_protests %></p>
-    <p class="data-label">PROTESTS</p>
-  </div>
-
-  <div id="location-cirlce">
-    <p class="data-number"><%= @count_locations %></p>
-    <p class="data-label">LOCATIONS</p>
-  </div>
-
-  <div id="outer-share-circle"></div>
-  <div id="share-circle">
-    <p class="data-number"><%= @count_shares %></p>
-    <p class="data-label">SHARES</p>
-  </div>
-
-  <div class="today-content">
-    <div class="today-mex-date text-center">
-      <h1 class="today-header">MEXICO CITY</h1>
-      <p class="today-date"><%= Date.today.strftime("%B %d, %Y") %></p>
+    <div id="protest-circle">
+      <p class="data-number"><%= @count_protests %></p>
+      <p class="data-label">PROTESTS</p>
     </div>
-    <div class="share-info">
-      <h5>share i<strong>m</strong>visible now</h5>
-      <div class="share-buttons">
-      <div class="fb-share-button" data-href="http://www.im-visible.com/protests/" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.im-visible.com%2Fprotests%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-      <a href="https://twitter.com/intent/tweet?button_hashtag=imvisible&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-text="Sexual harassment happens every day and it goes unnoticed -- " data-url="http://www.im-visible.com/protests" data-show-count="false">Tweet #imvisible</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <div id="location-cirlce">
+      <p class="data-number"><%= @count_locations %></p>
+      <p class="data-label">LOCATIONS</p>
+    </div>
+
+    <div id="outer-share-circle"></div>
+    <div id="share-circle">
+      <p class="data-number"><%= @count_shares %></p>
+      <p class="data-label">SHARES</p>
+    </div>
+  <div class="today_page">
+    <div class="today-content">
+      <div class="today-mex-date text-center">
+        <h1 class="today-header">MEXICO CITY</h1>
+        <p class="today-date"><%= Date.today.strftime("%B %d, %Y") %></p>
+      </div>
+      <div class="share-info">
+        <h5>share i<strong>m</strong>visible now</h5>
+        <div class="share-buttons">
+        <div class="fb-share-button" data-href="http://www.im-visible.com/protests/" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.im-visible.com%2Fprotests%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+        <a href="https://twitter.com/intent/tweet?button_hashtag=imvisible&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-text="Sexual harassment happens every day and it goes unnoticed -- " data-url="http://www.im-visible.com/protests" data-show-count="false">Tweet #imvisible</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
       </div>
     </div>
   </div>
