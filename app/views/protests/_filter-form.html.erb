@@ -1,12 +1,12 @@
 <%= form_tag protests_path, method: :get do %>
-  <%= collection_select :search_station, params[:search_station], Station.all, :id, :name, { prompt: "Select Station" }, { class: "search_station" } %>
+  <%= select_tag :search_station, options_for_select(Station.all.map { |station| [station.name, station.id] }.unshift(["Select Station", ""]), selected: params[:search_station]), class: "search_station" %>
   <br>
-  <%= collection_select :search_category, params[:search_category], AssaultCategory.all, :id, :name, { prompt: "Select Assault Type" }, { class: "search_category" } %>
+  <%= select_tag :search_category, options_for_select(AssaultCategory.all.map { |station| [station.name, station.id] }.unshift(["Select Category", ""]), selected: params[:search_category]), class: "search_category" %>
   <br>
-  <%= select_date nil, prefix: :start_date, include_blank: true %>
+  <%= date_field_tag :start_date, params[:start_date], class: "search_date" %>
   <br>
   <%= submit_tag "Search", class: "btn see-results animate__animated animate__pulse animate__slower animate__infinite" %>
   <br>
-  <%= link_to "restore", "/protests?", class: "restore-link" %>
+  <%= link_to "clear filters", "/protests?", class: "restore-link" %>
 <% end %>
 
