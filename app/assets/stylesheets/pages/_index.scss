@@ -110,4 +110,7 @@ body {
   color: white;
 }
 
-
+.close {
+  position: relative;
+  z-index: 1001;
+}
