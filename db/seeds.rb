@@ -12,7 +12,7 @@ assault_categories.each do |category|
   AssaultCategory.create!(name: category)
 end
 
-url = "https://datos.cdmx.gob.mx/api/records/1.0/search/?dataset=estaciones-del-metro&q=&rows=30"
+url = "https://datos.cdmx.gob.mx/api/records/1.0/search/?dataset=estaciones-del-metro&q=&rows=40"
 JSON.parse(open(url).read)["records"].each do |station|
   name = station["fields"]["name"]
   longitude = station["fields"]["lon"]
@@ -196,6 +196,126 @@ end
     date: Faker::Date.between(from: 30.days.ago, to: Date.today),
     time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
     description: "A car slowed down next to me when I was close to the station and this guy was yelling disgusting things at me and telling me to come with him. As I got closer to the station the car fully stopped and this other guy from the back and was walking towards me so I ran into the station that was full of people and lost him.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "A man in his 40s, probably homeless, followed be around the station. He was making sexual noises. I was so shocked, it was the middle of the day!",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "It was a busy morning on the metro and my cabin was packed. All of a sudden I felt a hand stroke my leg. At first I thought it was accidental, but then he moved up my skirt. I tried to move a few meters away. I have a suspicion who did it, but I was never able to verify.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "A horrible thing happened to me on the metro today. A man started shouted disgusting things to me out of the blue. Like I was a whore and I dressed like a slut and that I was asking for men to rape me. What was even worse is that all the bystanders were laughing. I felt so humiliated.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "Every day I see girls being harassed while traveling on the metro. I’m so sick of it. This has to stop.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "My husband got into a big fight with a guy at our metro station because the man started catcalling me. I was so relieved I was with someone, otherwise I wouldn’t have know what to do.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "It was a Friday night and I was ready to go out with my friend. She was walking on front of me and got through the ticket gate, when this man started pressing himself against me from behind. I got overwhelmed and couldn’t find my ticket anymore. My friend was not able to do anything because she was already inside. After a minute I was able to pull myself loose and to enter. We ran off and jumped on the first available metro which was in the wrong direction, but we didn’t care.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "This happened already a week ago, but I still like to protest. I saw this girl, very drunk waiting for her metro, when these two guys came up to her. First it looked like some innocent flirting, but it got more aggressive. She didn’t want to talk to them but she was too drunk to properly defend herself. Then I saw the guys taking her outside of the station. I was on the other side of track but I alerted the police right away. I so wish that she is ok and nothing bad happened to her.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "The one time I get into an almost empty wagon I find a guy touching himself . There was a mom with kids in the wagon, and I tell the guy to stop being a creep and he yells back at me to shut up unless I want in on it. I got out in the next stop and so did the family.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "This man groped me on the metro. It was packed and he ripped up my button shirt. I started screaming but nobody helped me and I couldn’t get away because we were jammed together, I fought him however I could and got out on the next stop with my ripped clothes.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "As soon as I got to the station these two guys whistled at me trying to get my attention and I turned my back on them, but they started calling me names and insulted me. One got up and asked me where I was going but luckily this woman stood in the middle and he backed away, but not without telling me I wanted him.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "I was on the metro with my little sister and she was acting weird, telling me she was scared but she wouldn’t tell me why, so I started looking around and this creep was making her feel uncomfortable. I stared at him as if telling him I was watching him but he defied me. We got out on the next stop and luckily he didn’t follow us but I got really scared for both of us.",
+    station: Station.order('RANDOM()').first
+    )
+end
+
+5.times do
+  Protest.create!(
+    experienced: true,
+    date: Faker::Date.between(from: 30.days.ago, to: Date.today),
+    time: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
+    description: "I witnessed a girl getting groped by 3 men in the station. It was late and I had just gotten there and heard the airl say: “please stop.” So I told them to please stop it, but then one of them turn to me and he had his thing out, so I ran away as far as I could Trying to find someone. I found someone that would go back with me but when we got there, they weren’t there anymore. I cannot get the image or the voice of the girl out of my head.",
     station: Station.order('RANDOM()').first
     )
 end
