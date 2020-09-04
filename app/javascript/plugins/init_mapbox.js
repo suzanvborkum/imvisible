@@ -7,7 +7,7 @@ const initMapbox = () => {
     mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
     const map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v11',
+      style: 'mapbox://styles/suzanvborkum/cke223e700hx51bo7wru5bfns',
       center: [-99.13, 19.43],
       zoom: 11,
       maxZoom : 17,
