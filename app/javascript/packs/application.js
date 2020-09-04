@@ -3,15 +3,12 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-import "animate.css";
-import "animate.css"
 import "bootstrap";
 import "animate.css";
 import { initMapbox } from '../plugins/init_mapbox';
 import { initSelect2 } from '../plugins/init_select2';
 import { collapse } from '../components/collapse';
 import { indexScroll, indexScroll2 } from '../components/indexscroll';
-import { activeButton } from '../components/active-button';
 import { loadModal } from '../components/load_modal';
 
 document.addEventListener('turbolinks:load', () => {
@@ -20,6 +17,5 @@ document.addEventListener('turbolinks:load', () => {
   collapse();
   // indexScroll();
   // indexScroll2();
-  activeButton();
   loadModal();
 });
