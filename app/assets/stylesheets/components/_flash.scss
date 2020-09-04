@@ -4,7 +4,7 @@
   left: 50%;
   margin-left: -115px;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
   background: #CBBCDC;
   box-shadow: 0 0 8px rgba(0,0,0,0.2);
@@ -12,10 +12,21 @@
   color: #322343;
   text-align: center;
   width: 230px;
-  margin-bottom: 70%
+  margin-bottom: 70%;
+  z-index: 999;
+  flex-direction: column;
 }
 
 .flash-success {
   border: 2px solid #322343;
+}
+
+.flash-close {
+  text-align: right;
+  width: 100%;
+}
+
+.big-icon {
+  font-size: 24px;
 }
 
