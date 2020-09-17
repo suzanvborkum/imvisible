@@ -30,5 +30,8 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  protest: "Protest Now"
-  visit_incidents: "or visit the incidents map"
+  pages:
+    home:
+      protest: "Protest Now"
+      visit_incidents: "or visit the incidents map"
+      slogan_html: "EVERY DAY WOMEN ARE SEXUALLY HARASSED WHILE USING PUBLIC TRANSPORT AND IT GOES UNNOTICED.<br><strong>NOT ANYMORE.</strong><br><br>DID YOU EXPERIENCE OR WITNESS AN INCIDENT ?"
