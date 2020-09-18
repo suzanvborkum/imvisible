@@ -155,6 +155,9 @@
 .other-support-section {
   background-color: $purplevisible;
   color: #003D32;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .support-header {
@@ -164,9 +167,9 @@
 }
 
 .support-item-left {
-  max-width: 500px;
+  max-width: 350px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   padding: 15px 10px;
   border-top: solid 0.5px #003D32;
   img {
