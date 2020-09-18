@@ -3,4 +3,37 @@ es:
     home:
       protest: "Protesta Ahora"
       visit_incidents: "o ve el mapa de incidentes"
-      slogan_html: "CIENTOS DE MUJERES SUFREN DE ACOSO SEXUAL EN EL TRANSPORTE PÚBLICO Y PASAN DESAPERCIBIDAS.<br><strong>YA NO MÁS.</strong><br><br>¿ TE TOCÓ VIVIR UN INCIDENTE O FUISTE TESTIGO ?"
+      slogan_html: "TODOS LOS DÍAS CIENTOS DE MUJERES SUFREN ACOSO SEXUAL EN EL TRANSPORTE PÚBLICO Y PASAN DESAPERCIBIDAS.<br><strong>YA NO MÁS.</strong><br><br>¿ TE TOCÓ VIVIR UN INCIDENTE O FUISTE TESTIGO ?"
+  protests:
+    new:
+      incident: "DETALLES DEL INCIDENTE"
+    form:
+      experienced: "ME TOCÓ VIVIRLO"
+      witnessed: "FUI TESTIGO"
+      location_label: "Ubicación más cercana al incidente"
+      date_label: "¿Cuándo ocurrió?"
+      assault_type_label: "¿Qué tipo de acoso sucedió?"
+      description_placeholder: "Cuéntanos tu historia..."
+      protest: "Protesta Ahora"
+    index:
+      see_all_btn: "Ve todas las protestas"
+      filter: "Filtro"
+      protests: "Protestas"
+      no_results: "No se encontraron protestas..."
+    today:
+      protests: "PROTESTAS"
+      locations: "UBICACIONES"
+      shares: "SHARES"
+      city: "CIUDAD DE MÉXICO"
+      share_html: "comparte i<strong>m</strong>visible ahora"
+      tweet: "Haz un tweet #imvisible"
+      facebook: "Comparte"
+  shared:
+    navbar:
+      home: "Inicio"
+      map: "Mapa de Acoso"
+      protest:  "Protesta Ahora"
+      today: "Protestas de Hoy"
+
+
+
