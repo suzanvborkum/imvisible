@@ -38,7 +38,7 @@ en:
   protests:
     new:
       incident: "INCIDENT INFORMATION"
-    _form:
+    form:
       experienced: "EXPERIENCED"
       witnessed: "WITNESSED"
       location_label: "Closest loation to the incident:"
@@ -51,6 +51,13 @@ en:
       filter: "Filter"
       protests: "Protests"
       no_results: "No protests found..."
+    filter-form:
+      select-station: "Select Station"
+      select-category: "Select Category"
+      search: "Search"
+      clear: "clear filters"
+    info_window:
+      see_all_per_station: "See all protests at %{station} station"
     today:
       protests: "PROTESTS"
       locations: "LOCATIONS"
