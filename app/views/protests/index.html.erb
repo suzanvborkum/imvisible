@@ -38,7 +38,7 @@
                 <div id='<%="collapse#{index}"%>' class="collapse show" aria-labelledby='<%="headingOne"%>' data-parent="#accordion">
                   <p class="full-description"><%= protest.description %></p>
                 <div class="protest-details">
-                  <p> <i class="far fa-calendar-alt"></i> <%= protest.date.strftime("%B %d, %Y") %> </p>
+                  <p> <i class="far fa-calendar-alt"></i> <%= l protest.date, format: :long %> </p>
                   <p> <i class="far fa-clock"></i> <%= protest.time.to_s(:time) %></p>
                   <p> <% protest.protest_assaults.each do |protest_assault| %>
                     <i class="fas fa-exclamation"></i>  <%= protest_assault.assault_category.name %>

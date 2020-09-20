@@ -20,6 +20,13 @@ es:
       filter: "Filtro"
       protests: "Protestas"
       no_results: "No se encontraron protestas..."
+    filter-form:
+      select-station: "Escoger una estación"
+      select-category: "Escoger una categoría"
+      search: "Buscar"
+      clear: "limpiar filtros"
+    info_window:
+      see_all_per_station: "Ver todas las protestas en la estación %{station}"
     today:
       protests: "PROTESTAS"
       locations: "UBICACIONES"
