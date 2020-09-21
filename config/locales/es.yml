@@ -4,6 +4,13 @@ es:
       protest: "Protesta Ahora"
       visit_incidents: "o ve el mapa de incidentes"
       slogan_html: "TODOS LOS DÍAS CIENTOS DE MUJERES SUFREN ACOSO SEXUAL EN EL TRANSPORTE PÚBLICO Y PASAN DESAPERCIBIDAS.<br><strong>YA NO MÁS.</strong><br><br>¿ TE TOCÓ VIVIR UN INCIDENTE O FUISTE TESTIGO ?"
+      protests: "PROTESTAS"
+      locations: "UBICACIONES"
+      shares: "SHARES"
+      city: "CIUDAD DE MÉXICO"
+      share_html: "comparte i<strong>m</strong>visible ahora"
+      tweet: "Haz un tweet #imvisible"
+      facebook: "Comparte"
   protests:
     new:
       incident: "DETALLES DEL INCIDENTE"
@@ -20,14 +27,6 @@ es:
       filter: "Filtro"
       protests: "Protestas"
       no_results: "No se encontraron protestas..."
-    today:
-      protests: "PROTESTAS"
-      locations: "UBICACIONES"
-      shares: "SHARES"
-      city: "CIUDAD DE MÉXICO"
-      share_html: "comparte i<strong>m</strong>visible ahora"
-      tweet: "Haz un tweet #imvisible"
-      facebook: "Comparte"
   shared:
     navbar:
       home: "Inicio"

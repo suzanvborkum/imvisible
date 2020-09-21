@@ -1,6 +1,5 @@
 class ProtestsController < ApplicationController
   def index
-
     if params[:search_category] || params[:search_station] || params[:start_date]
       @protests = query_protests(params[:search_category], params[:search_station], params[:start_date])
     else
@@ -17,14 +16,6 @@ class ProtestsController < ApplicationController
         number_of_protests: Protest.where(station_id: station).count
       }
     end
-
-  end
-
-  def today
-    @protests = Protest.all
-    @count_protests = Protest.where(date: Date.today).count
-    @count_locations = Protest.group(:station).where(date: Date.today).count.count
-    @count_shares = rand(6..14)
   end
 
   def show
