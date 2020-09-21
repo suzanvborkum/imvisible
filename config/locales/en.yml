@@ -35,6 +35,13 @@ en:
       protest: "Protest Now"
       visit_incidents: "or visit the incidents map"
       slogan_html: "EVERY DAY WOMEN ARE SEXUALLY HARASSED WHILE USING PUBLIC TRANSPORT AND IT GOES UNNOTICED.<br><strong>NOT ANYMORE.</strong><br><br>DID YOU EXPERIENCE OR WITNESS AN INCIDENT ?"
+      protests: "PROTESTS"
+      locations: "LOCATIONS"
+      shares: "SHARES"
+      city: "MEXICO CITY"
+      share_html: "share i<strong>m</strong>visible now"
+      tweet: "Tweet #imvisible"
+      facebook: "Share"
   protests:
     new:
       incident: "INCIDENT INFORMATION"
@@ -58,14 +65,6 @@ en:
       clear: "clear filters"
     info_window:
       see_all_per_station: "See all protests at %{station} station"
-    today:
-      protests: "PROTESTS"
-      locations: "LOCATIONS"
-      shares: "SHARES"
-      city: "MEXICO CITY"
-      share_html: "share i<strong>m</strong>visible now"
-      tweet: "Tweet #imvisible"
-      facebook: "Share"
   shared:
     navbar:
       home: "Home"

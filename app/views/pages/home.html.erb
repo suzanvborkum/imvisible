@@ -1,17 +1,56 @@
-<div class="container vh-100">
-  <div class="row">
-    <div class="col-12 col-md-8 col-lg-6 col-xl-6">
-      <div>
-        <h1 class="header animate__animated animate__fadeIn text-center">i<strong>m</strong>visible</h1>
+<div class="container-fluid home-page bg-white m-0 p-0">
+  <div class="row intro-section text-center m-0 p-4">
+    <h1 class="header animate__animated animate__fadeIn text-center">i<strong>m</strong>visible</h1>
+    <h2 class="subheader animate__animated animate__fadeIn text-center"><%= t ".slogan_html" %></h2>
+    <div class="button-div animate__animated animate__pulse animate__slower animate__infinite"><a href="protests/new"><button type="button" class="protest-button"><%= t '.protest' %></button></a></div>
+  </div>
+  <div class="row options-section text-center m-0 p-3">
+    <a href="/protests/new" class="link-item col-12 col-md-8 col-lg-6 col-xl-6">
+      <img src="https://images.unsplash.com/photo-1560537083-b510af644919?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&h=1500&q=80" class="avatar-large">
+      <p class="link-item-title"><strong>SHARE AN INCIDENT</strong></p>
+      <p>Did you experience or witness sexual assault on public transport, make it visible by protesting and telling your story.</p>
+    </a>
+    <a href="/protests" class="link-item">
+      <img src="https://images.unsplash.com/photo-1584291527935-456e8e2dd734?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1250&h01250&q=80" class="avatar-large">
+      <p class="link-item-title"><strong>HAVE A LOOK AT THE MAP</strong></p>
+      <p>All protests are visible on the map. Read the stories and see where in the city protests are happening.</p>
+    </a>
+    <a href="/about" class="link-item">
+      <img src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=664&h=664&q=80" class="avatar-large">
+      <p class="link-item-title"><strong>GET SUPPORT</strong></p>
+      <p>Did something happen and you want support or if you want to learn more about the problem, visit our partner organisations.</p>
+    </a>
+    <a href="/about" class="link-item">
+      <img src="https://images.unsplash.com/photo-1484069560501-87d72b0c3669?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&h=1500&q=80" class="avatar-large">
+      <p class="link-item-title"><strong>FREQUENTLY ASKES QUESTIONS</strong></p>
+      <p>Learn more about i<strong>m</strong>visible.</p>
+    </a>
+  </div>
+  <div class="row today-section text-center bg-white m-0 p4">
+    <h1 class="today-header pt-4">Mexico City</h1>
+    <p class="today-date"><%= Date.today.strftime("%B %d, %Y") %></p>
+    <div class="circles">
+      <div id="today-big-circle"></div>
+      <div id="protest-circle">
+        <p class="data-number"><%= @count_protests %></p>
+        <p class="data-label"><%= t ".protests" %></p>
       </div>
-      <div id="circle" style="position:fixed; left:150px; top:-18px;">
+      <div id="location-cirlce">
+        <p class="data-number"><%= @count_locations %></p>
+        <p class="data-label"><%= t ".locations" %></p>
       </div>
-      <div id="small-circle" style="position:fixed; right:260px; top:490px;">
-      </div intro-text>
-        <h2 class="subheader animate__animated animate__fadeIn text-center"><%= t ".slogan_html" %></h2>
-        <div class="button-div animate__animated animate__pulse animate__slower animate__infinite"><a href="protests/new"><button type="button" class="protest-button"><%= t '.protest' %></button></a>
+      <div id="outer-share-circle"></div>
+      <div id="share-circle">
+        <p class="data-number"><%= @count_shares %></p>
+        <p class="data-label"><%= t ".shares" %></p>
       </div>
-      <div class="incidents-link text-center"><a href="protests"><%= t '.visit_incidents' %></a></div>
+    </div>
+    <div class="share-info mb-4">
+      <h5><%= t ".share_html" %></h5>
+      <div class="share-buttons">
+      <div class="fb-share-button" data-href="http://www.im-visible.com/protests/" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.im-visible.com%2Fprotests%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><%= t ".facebook" %></a></div>
+        <a href="https://twitter.com/intent/tweet?button_hashtag=imvisible&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-text="Sexual harassment happens every day and it goes unnoticed -- " data-url="http://www.im-visible.com/protests" data-show-count="false"><%= t ".tweet" %></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
     </div>
   </div>
 </div>

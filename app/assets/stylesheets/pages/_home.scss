@@ -1,3 +1,19 @@
+.home-page {
+  position: relative;
+  height: 100vw;
+  margin: 0 auto;
+}
+
+.intro-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  background-color: white;
+}
+
 .header {
   color: #005243;
   letter-spacing: 10px;
@@ -10,18 +26,7 @@
   line-height: 2.0;
   font-weight: 300;
   margin: 30px 0;
-}
-
-.container {
-  // margin: 25px auto;
-  padding: 0px 40px;
-  // justify-text: center;
-  justify-content: center;
-  // height: 100vh;
-}
-
-.intro-text {
-  width: 300px;
+  width: 80vw;
 }
 
 @media screen and (max-width: 1600px) {
@@ -43,31 +48,6 @@
   }
 }
 
-#circle {
-    background: #CBBCDC;
-    border-radius: 50%;
-    width: 440px;
-    height: 440px;
-    z-index: -1;
-    opacity: 90%;
-    // position: absolute;
-    // top: 10px;
-    // left: 200px;
-}
-
-#small-circle {
-    background: #CBBCDC;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    z-index: -1;
-    opacity: 90%;
-    // border-color: #322343;
-    // position: absolute;
-    // top: 500px;
-    // left: -60px;
-}
-
 .protest-button {
   font-family: $body-font;
   color: white;
@@ -76,20 +56,14 @@
   font-size: 24px;
   font-weight: 350;
   background-color: #322343;
-  margin: 22px 0px 0px 0px;
+  margin: 22px 0px;
   z-index: 4;
   border: none;
   transition: color 2s linear;
 }
 
-// .protest-button:active {
-// //   background-color: ;
-// //   color: ;
-// // }
-
 .button-div {
   text-align: center;
-  // height: 200px;
 }
 
 .incidents-link {
@@ -98,4 +72,135 @@
   a {
     color: #322343;
   }
+}
+
+.options-section {
+  background-color: #CBBCDC;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-item {
+  padding: 20px 10px;
+  max-width: 400px;
+  p {
+    color: #005243;
+  }
+}
+
+.link-item-title {
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+
+.today-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #005243;
+}
+
+.circles {
+  position: relative;
+  height: 400px;
+  width: 320px;
+  left: 6vh;
+  font-size: 14px;
+}
+
+#today-big-circle {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border: 1px solid #003D32;
+  border-radius: 50%;
+  top: 50px;
+ }
+
+#protest-circle {
+  position: absolute;
+  top: 18px;
+  width: 120px;
+  height: 120px;
+  background-color: #003D32;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    margin: 0;
+  }
+  box-shadow: 15px 15px 1px #CBBCDC;
+}
+
+#location-cirlce {
+  position: absolute;
+  left: 162px;
+  top: 116px;
+  width: 120px;
+  height: 120px;
+  background-color: #CBBCDC;
+  border-radius: 50%;
+  color: #003D32;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    margin: 0;
+  }
+}
+
+#share-circle {
+  position: absolute;
+  top: 231px;
+  left: 14px;
+  width: 90px;
+  height: 90px;
+  background: #003D32;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    margin: 0;
+  }
+}
+
+#outer-share-circle {
+  position: absolute;
+  top: 200px;
+  left: -15px;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #CBBCDC;
+  border-radius: 50%;
+}
+
+.share-info {
+  color: #003D32;
+  font-weight: light;
+}
+
+.twitter-hashtag-button {
+  margin: 8px 5px 5px 5px;
+}
+
+.fb-share-button {
+  margin: 5px;
+}
+
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
