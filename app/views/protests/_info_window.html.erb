@@ -1,1 +1,1 @@
-<%= link_to "See all protests at #{station.name} station", protests_path(search_station: station.id), class:"popup-text" %>
+<%= link_to t(".see_all_per_station", station: station.name), protests_path(search_station: station.id), class:"popup-text" %>

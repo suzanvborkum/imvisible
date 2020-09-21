@@ -20,7 +20,7 @@
     <div class="today-content">
       <div class="today-mex-date text-center">
         <h1 class="today-header"><%= t ".city" %></h1>
-        <p class="today-date"><%= Date.today.strftime("%B %d, %Y") %></p>
+        <p class="today-date"><%= l Date.today, format: :long %></p>
       </div>
       <div class="share-info">
         <h5><%= t ".share_html" %></h5>
