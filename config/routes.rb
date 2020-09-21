@@ -4,9 +4,6 @@ Rails.application.routes.draw do
     get '/about', to: 'pages#about'
     resources :protests, only: %i[index show new create] do
       resources :protest_assaults, only: :create
-      collection do
-        get :today
-      end
     end
   end
 end
