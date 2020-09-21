@@ -56,7 +56,7 @@
   font-size: 24px;
   font-weight: 350;
   background-color: #322343;
-  margin: 22px 0px;
+  margin: 20px 0px 50px 0px;
   z-index: 4;
   border: none;
   transition: color 2s linear;
@@ -207,4 +207,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.border-circle-home1 {
+  margin-top: -35px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #003D32;
+  z-index: 1;
+}
+
+.border-circle-home2 {
+  margin-bottom: -35px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #003D32;
+  z-index: 1;
 }
