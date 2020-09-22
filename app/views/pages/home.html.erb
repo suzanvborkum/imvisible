@@ -33,22 +33,22 @@
     <div class="border-circle-home2"></div>
   </div>
   <div class="row today-section text-center bg-white m-0 p4">
-    <h1 class="today-header pt-5">Mexico City</h1>
-    <p class="today-date"><%= Date.today.strftime("%B %d, %Y") %></p>
+    <h1 class="today-header pt-5"><%= t ".city" %></h1>
+    <p class="today-date"><%= l(Date.today, format: :long) %></p>
     <div class="circles">
       <div id="today-big-circle"></div>
       <div id="protest-circle">
         <p class="data-number"><%= @count_protests %></p>
-        <p class="data-label"><%= t ".protests" %></p>
+        <p class="data-label"><%= t '.protests', count: @count_protests %></p>
       </div>
       <div id="location-cirlce">
         <p class="data-number"><%= @count_locations %></p>
-        <p class="data-label"><%= t ".locations" %></p>
+        <p class="data-label"><%= t ".locations", count: @count_locations %></p>
       </div>
       <div id="outer-share-circle"></div>
       <div id="share-circle">
         <p class="data-number"><%= @count_shares %></p>
-        <p class="data-label"><%= t ".shares" %></p>
+        <p class="data-label"><%= t ".shares", count: @count_shares %></p>
       </div>
     </div>
     <div class="share-info mb-4">

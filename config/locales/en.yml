@@ -35,13 +35,27 @@ en:
       protest: "Protest Now"
       visit_incidents: "or visit the incidents map"
       slogan_html: "EVERY DAY WOMEN ARE SEXUALLY HARASSED WHILE USING PUBLIC TRANSPORT AND IT GOES UNNOTICED.<br><strong>NOT ANYMORE.</strong><br><br>DID YOU EXPERIENCE OR WITNESS AN INCIDENT ?"
-      protests: "PROTESTS"
-      locations: "LOCATIONS"
-      shares: "SHARES"
+      protests:
+        one: "PROTEST"
+        other: "PROTESTS"
+      locations:
+        one: "LOCATION"
+        other: LOCATIONS"
+      shares:
+        one: "SHARE"
+        other: "SHARES"
       city: "MEXICO CITY"
       share_html: "share i<strong>m</strong>visible now"
       tweet: "Tweet #imvisible"
       facebook: "Share"
+      share_an_incident_title: "SHARE AN INCIDENT"
+      share_an_incident_text: "If you experienced or witnessed sexual assault on public transport, make it visible by protesting & telling your story."
+      have_a_look_title: "HAVE A LOOK AT THE MAP"
+      have_a_look_text: "All protests are visible on our map. Read the stories and see where in the city incidents happened."
+      get_support_title: "GET SUPPORT"
+      get_support_text: "Do you want support or to learn more about the problem? Check out our recommended websites"
+      faq_title: "FREQUENTLY ASKED QUESTIONS"
+      faq_text_html: "Do you have have any questions about what we do? Learn more about i<strong>m</strong>visible"
   protests:
     new:
       incident: "INCIDENT INFORMATION"
