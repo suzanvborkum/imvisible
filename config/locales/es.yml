@@ -11,6 +11,14 @@ es:
       share_html: "comparte i<strong>m</strong>visible ahora"
       tweet: "Haz un tweet #imvisible"
       facebook: "Comparte"
+      share_an_incident_title: "COMPARTE UN INCIDENTE"
+      share_an_incident_text: "Si viviste o fuiste testigo de acoso sexual en el transporte público, hazlo visible protestando y contándonos tu historia."
+      have_a_look_title: "VE EL MAPA DE ACOSO"
+      have_a_look_text: "Todas las protestas son visbles en imvisible. Checa las historias y ve dónde han pasado casos de acoso."
+      get_support_title: "RECIBE APOYO"
+      get_support_text: "¿Necesitas ayuda o quieres aprender más acerca del problema? Dale un vistazo a nuestras páginas recomendadas."
+      faq_title: "PREGUNTAS MÁS FRECUENTES"
+      faq_text_html: "¿Tienes alguna pregunta sobre lo que hacemos? Conoce más acerca de i<strong>m</strong>visible"
   protests:
     new:
       incident: "DETALLES DEL INCIDENTE"
