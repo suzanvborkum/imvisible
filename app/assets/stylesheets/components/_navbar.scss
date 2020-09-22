@@ -19,3 +19,16 @@
   position: sticky !important;
 }
 
+.green {
+  color: $deepgreen;
+}
+
+.padding-left {
+  padding: 10px 0px 10px 5px;
+}
+
+.no-decoration:hover {
+  color: $deepgreen;
+  text-decoration: none;
+  cursor: pointer;
+}

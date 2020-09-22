@@ -9,46 +9,46 @@
     <div class="row">
       <a href="/protests/new" class="link-item">
         <img src="https://images.unsplash.com/photo-1560537083-b510af644919?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&h=1500&q=80" class="avatar-large">
-        <p class="link-item-title"><strong>SHARE AN INCIDENT</strong></p>
-        <p>Did you experience or witness sexual assault on public transport, make it visible by protesting & telling your story.</p>
+        <p class="link-item-title"><strong><%= t ".share_an_incident_title" %></strong></p>
+        <p><%= t ".share_an_incident_text" %></p>
       </a>
       <a href="/protests" class="link-item">
         <img src="https://images.unsplash.com/photo-1584291527935-456e8e2dd734?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1250&h01250&q=80" class="avatar-large">
-        <p class="link-item-title"><strong>HAVE A LOOK AT THE MAP</strong></p>
-        <p>All protests are visible on our map. Read the stories and see where in the city incidents happened.</p>
+        <p class="link-item-title"><strong><%= t ".have_a_look_title" %></strong></p>
+        <p><%= t ".have_a_look_text" %></p>
       </a>
     </div>
     <div class="row">
       <a href="/about/#support-section" class="link-item">
         <img src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=664&h=664&q=80" class="avatar-large">
-        <p class="link-item-title"><strong>GET SUPPORT</strong></p>
-        <p>Do you want support or learn more about the problem, check out the recommended websites.</p>
+        <p class="link-item-title"><strong><%= t ".get_support_title" %></strong></p>
+        <p><%= t ".get_support_text" %></p>
       </a>
       <a href="/about/#section-faq" class="link-item">
         <img src="https://images.unsplash.com/photo-1484069560501-87d72b0c3669?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&h=1500&q=80" class="avatar-large">
-        <p class="link-item-title"><strong>FREQUENTLY ASKED QUESTIONS</strong></p>
-        <p>Do you have any questions about what we do? Learn more about i<strong>m</strong>visible.</p>
+        <p class="link-item-title"><strong><%= t ".faq_title" %></strong></p>
+        <p><%= t ".faq_text_html" %></p>
       </a>
     </div>
     <div class="border-circle-home2"></div>
   </div>
   <div class="row today-section text-center bg-white m-0 p4">
-    <h1 class="today-header pt-5">Mexico City</h1>
-    <p class="today-date"><%= Date.today.strftime("%B %d, %Y") %></p>
+    <h1 class="today-header pt-5"><%= t ".city" %></h1>
+    <p class="today-date"><%= l(Date.today, format: :long) %></p>
     <div class="circles">
       <div id="today-big-circle"></div>
       <div id="protest-circle">
         <p class="data-number"><%= @count_protests %></p>
-        <p class="data-label"><%= t ".protests" %></p>
+        <p class="data-label"><%= t '.protests', count: @count_protests %></p>
       </div>
       <div id="location-cirlce">
         <p class="data-number"><%= @count_locations %></p>
-        <p class="data-label"><%= t ".locations" %></p>
+        <p class="data-label"><%= t ".locations", count: @count_locations %></p>
       </div>
       <div id="outer-share-circle"></div>
       <div id="share-circle">
         <p class="data-number"><%= @count_shares %></p>
-        <p class="data-label"><%= t ".shares" %></p>
+        <p class="data-label"><%= t ".shares", count: @count_shares %></p>
       </div>
     </div>
     <div class="share-info mb-4">

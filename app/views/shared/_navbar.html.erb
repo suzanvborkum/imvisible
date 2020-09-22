@@ -3,6 +3,14 @@
   <%= link_to t(".home"), root_path, class: "dropdown-item" %>
   <%= link_to t(".map"), protests_path, class: "dropdown-item" %>
   <%= link_to t(".protest"), new_protest_path, class: "dropdown-item" %>
-  <%= link_to "About", about_path, class: "dropdown-item" %>
+  <%= link_to t(".about"), about_path, class: "dropdown-item" %>
+  <% if params[:locale] == 'en' %>
+    <%= link_to 'ES', { locale: 'es' }, {class: "green padding-left no-decoration"} %>
+    <strong><%= link_to 'EN', { locale: 'en' }, { class: "green padding-left no-decoration"} %></strong>
+  <% else %>
+    <strong><%= link_to 'ES', { locale: 'es' }, {class: "green padding-left no-decoration"} %></strong>
+    <%= link_to 'EN', { locale: 'en' }, {class: "green padding-left no-decoration"} %>
+  <% end %>
+  </div>
 </div>
 
