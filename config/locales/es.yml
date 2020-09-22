@@ -40,9 +40,17 @@ es:
       what_to_do: "¿Qué hacer en casa de acoso sexual en la CDMX?"
       justice_centers: "Centros de Justicia Para Mujeres"
       read_more: "LEE MÁS"
-      most_dangerous: "Transporte Público de la CDMX Calificado Como El Más Peligroso"
+      most_dangerous: "Transporte público de la CDMX calificado como el más peligroso para mujeres"
       gender_gap: "Cuidado con la brecha de género: la brecha de datos oculta en el transporte"
       faq: "Preguntas Más Frecuentes"
+      what_will_happen_question: "¿QUÉ VA A PASAR CON MI PROTESTA?"
+      what_will_happen_answer: "Tu protesta nos ayuda a estar un paso más cerca de abordar el problema de acoso sexual en el transporte público. Tu protesta es completamente anónima y puedes compartir tanto de tu incidente como tú quieras. Después de protestar, tu protesta estará visible en el mapa y en nuestra lista de protestas."
+      involved_question: "¿CÓMO PUEDO SEGUIR INVOLUCRADO?"
+      involved_answer_html: "Si viviste o fuiste testigo de acoso sexual en el transporte público de la CDMX, te  invitamos a protestar. Esta  es la manera más efectiva y segura de hacer el problema visible. También puedes compartir a i<strong>m</strong>visible en tus redes sociales o seguirnos en Instagram y Twitter"
+      psychological_help_question_html: "¿PUEDO RECIBIR AYUDA PSICOLÓGICA EN I<strong>M</strong>VISBLE?"
+      psychological_help_answer_html: "i<strong>m</strong>visible es una plataforma para protestar. Si experimentaste acoso sexual y necesitas asesoramiento, te aconsejamos a buscar ayuda profesional."
+      other_cities_question_html: "¿I<strong>M</strong>VISIBLE ESTARÁ DISPONIBLE EN OTRAS CIUDADES?"
+      other_cities_answer_html: "i<strong>m</strong>visible fue diseñado para la Ciudad de México, pero mujeres alrededor del mundo sufren de acoso sexual en el transporte público. Nuestro objetivo es que i<strong>m</strong>visible esté disponible en más ciudades en el futuro. Si quieres contactarnos para implementar i<strong>m</strong>visible en tu ciudad, mándanos un mensaje por Instagram o Twitter"
   protests:
     new:
       incident: "DETALLES DEL INCIDENTE"
