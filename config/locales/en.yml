@@ -63,6 +63,17 @@ en:
       follow_imvisible_html: "follow i<strong>m</strong>visible:"
       vision_title: "VISION"
       vision_text_html: "We believe it is necessary that women feel safe and empowered to share daily abuse. With every protest we are a little bit closer in demonstrating the magnitude of the problem. The data that is collected through i<strong>m</strong>visible is first and foremost used to visualize and quantify the issue."
+      interest_sites_title: "OTHER SITES OF INTEREST"
+      womens_rights: "WOMEN'S RIGHTS"
+      un_women: "UN Women, Mexico"
+      secretary_women: "Secretary of Women, Mexico City"
+      support_title: "SUPPORT"
+      what_to_do: "What to do in case of sexual assault on public transport in CDMX"
+      justice_centers: "Justice Centers for Women"
+      read_more: "READ MORE"
+      most_dangerous: "Mexico City's transport ranked as most dangerous for women"
+      gender_gap: "Mind the gender gap: the hidden data gap in transport"
+      faq: "FAQ"
   protests:
     new:
       incident: "INCIDENT INFORMATION"

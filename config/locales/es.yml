@@ -32,6 +32,17 @@ es:
       follow_imvisible_html: "sigue a i<strong>m</strong>visible:"
       vision: "VISIÓN"
       vision_text_html: "Creemos que es necesario que las mujeres se sientan seguras y empoderadas de compartir el acoso diario. Con cada protesta estamos más cerca de demostrar la magnitud del problema. Los datos recolectados a través de i<strong>m</strong>visible son usados esencialmente para visibilizar y cuantificar el problema."
+      interest_sites_title: "OTROS SITIOS DE INTERÉS"
+      womens_rights: "DERECHOS DE LAS MUJERES"
+      un_women: "ONU Mujeres, México"
+      secretary_women: "Secretaría de las Mujeres, CDMX"
+      support_title: "APOYO"
+      what_to_do: "¿Qué hacer en casa de acoso sexual en la CDMX?"
+      justice_centers: "Centros de Justicia Para Mujeres"
+      read_more: "LEE MÁS"
+      most_dangerous: "Transporte Público de la CDMX Calificado Como El Más Peligroso"
+      gender_gap: "Cuidado con la brecha de género: la brecha de datos oculta en el transporte"
+      faq: "Preguntas Más Frecuentes"
   protests:
     new:
       incident: "DETALLES DEL INCIDENTE"
