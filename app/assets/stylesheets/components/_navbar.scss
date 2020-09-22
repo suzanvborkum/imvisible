@@ -19,3 +19,20 @@
   position: sticky !important;
 }
 
+.inline {
+  display: inline;
+}
+
+.green {
+  color: $deepgreen;
+}
+
+.padding-left {
+  padding: 5px 0px 5px 5px;
+}
+
+.no-decoration:hover {
+  color: $deepgreen;
+  text-decoration: none;
+  cursor: pointer;
+}
