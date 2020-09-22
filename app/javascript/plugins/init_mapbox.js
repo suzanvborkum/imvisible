@@ -8,7 +8,7 @@ const initMapbox = () => {
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/suzanvborkum/cke223e700hx51bo7wru5bfns',
-      center: [-99.13, 19.43],
+      center: [-99.135, 19.416],
       zoom: 11,
       maxZoom : 17,
       minZoom : 11

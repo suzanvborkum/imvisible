@@ -60,15 +60,16 @@ body {
 .center-bottom {
   position: absolute;
   left: 50%;
+  min-width: 210px;
   z-index: 13;
   top: 80%;
-  margin-left: -84px;
+  margin-left: -105px;
   font-family: $body-font;
   color: white;
-  padding: 12px 16px;
+  padding: 10px 16px;
   border-radius: 35px;
   border-width: 4px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 350;
   background-color: #322343;
 }
