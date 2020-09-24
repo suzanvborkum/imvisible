@@ -39,9 +39,16 @@
                 <div class="protest-details">
                   <p> <i class="far fa-calendar-alt"></i> <%= l protest.date, format: :long %> </p>
                   <p> <i class="far fa-clock"></i> <%= protest.time.to_s(:time) %></p>
-                  <p> <% protest.protest_assaults.each do |protest_assault| %>
-                    <i class="fas fa-exclamation"></i>  <%= protest_assault.assault_category.name %>
-                  <% end %> </p>
+                  <div class="all-categories">
+                    <p>
+                      <% protest.protest_assaults.each do |protest_assault| %>
+                        <i class="fas fa-exclamation"></i>  <%= protest_assault.assault_category.name %>
+                      <% end %>
+                      <% if protest.other_category %>
+                        <i class="fas fa-exclamation"></i> <%= protest.other_category.downcase %>
+                      <% end %>
+                    </p>
+                  </div>
                 </div>
                 </div>
               <% end %>

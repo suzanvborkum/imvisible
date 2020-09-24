@@ -76,6 +76,6 @@ class ProtestsController < ApplicationController
   end
 
   def strong_params
-    params.require(:protest).permit(:experienced, :date, :time, :description, :station_id, assault_category_ids: [])
+    params.require(:protest).permit(:experienced, :date, :time, :description, :station_id, :other_category, assault_category_ids: [])
   end
 end
