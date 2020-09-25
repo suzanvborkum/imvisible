@@ -40,7 +40,7 @@ en:
         other: "PROTESTS"
       locations:
         one: "LOCATION"
-        other: LOCATIONS"
+        other: "LOCATIONS"
       shares:
         one: "SHARE"
         other: "SHARES"
