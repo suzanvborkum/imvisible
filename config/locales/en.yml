@@ -40,7 +40,7 @@ en:
         other: "PROTESTS"
       locations:
         one: "LOCATION"
-        other: LOCATIONS"
+        other: "LOCATIONS"
       shares:
         one: "SHARE"
         other: "SHARES"
@@ -59,10 +59,10 @@ en:
     about:
       about_header: "ABOUT"
       mission_title: "MISSION"
-      mission_text_html: "i<strong>m</strong>visible is a platform that invites women to protest against sexual harassment on public transport. We feel that since incidents of harassment happen every day, women should have the opportunity to raise their hand every day."
+      mission_text_html: "<em>i<strong>m</strong>visible</em> is a platform that invites women to protest against sexual harassment on public transport. We feel that since incidents of harassment happen every day, women should have the opportunity to raise their hand every day."
       follow_imvisible_html: "follow i<strong>m</strong>visible:"
       vision_title: "VISION"
-      vision_text_html: "We believe it is necessary that women feel safe and empowered to share daily abuse. With every protest we are a little bit closer in demonstrating the magnitude of the problem. The data that is collected through i<strong>m</strong>visible is first and foremost used to visualize and quantify the issue."
+      vision_text_html: "We believe it is necessary that women feel safe and empowered to share daily abuse. With every protest we are a little bit closer in demonstrating the magnitude of the problem. The data that is collected through <em>i<strong>m</strong>visible</em> is first and foremost used to visualize and quantify the issue."
       interest_sites_title: "OTHER SITES OF INTEREST"
       womens_rights: "WOMEN'S RIGHTS"
       un_women: "UN Women, Mexico"
@@ -81,6 +81,7 @@ en:
       psychological_help_question_html: "CAN I GET PSYCHOLOGICAL HELP ON I<strong>M</strong>VISIBLE?"
       psychological_help_answer_html: "i<strong>m</strong>visible is a platform for protest. If you experienced sexual assault and you need counseling, we advice you to seek professional help."
       other_cities_question_html: "WILL I<strong>M</strong>VISIBLE BECOME AVAILABLE IN OTHER CITIES?"
+      other_cities_answer_html:  "<em>i<strong>m</strong>visible</em> was designed and launched in Mexico CIty, but women still face harasmment in public transportation. Our goal is to make <em>i<strong>m</strong>visible</em> availabe in other cities in the future. If you  want to contact us to implement <em>i<strong>m</strong>visible</em> in your city send us a message through Instagram  or Twitter."
   protests:
     new:
       incident: "INCIDENT INFORMATION"
