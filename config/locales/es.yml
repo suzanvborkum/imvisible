@@ -62,6 +62,7 @@ es:
       assault_type_label: "¿Qué tipo de acoso sucedió?"
       description_placeholder: "Cuéntanos tu historia..."
       protest: "Protesta Ahora"
+      other: "Otro"
     index:
       see_all_btn: "Ve todas las protestas"
       filter: "Filtro"
@@ -81,6 +82,9 @@ es:
       protest:  "Protesta Ahora"
       today: "Protestas de Hoy"
       about: "Sobre Nosotros"
+  layouts:
+    application:
+      alert_html: "<strong>!Eres visible!</strong><br>Tu protesta está <br> en el mapa"
 
 
 
