@@ -29,6 +29,10 @@ class ProtestsController < ApplicationController
 
   def create
     @protest = Protest.new(strong_params)
+    if @protest.other_category == ""
+      @protest.other_category = nil
+    end
+
     if @protest.save
       flash[:notice] = 'Successfully checked in'
       redirect_to protests_path
