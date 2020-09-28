@@ -202,3 +202,21 @@ input[type="checkbox"]{
 .description-box {
   margin-top: 10px;
 }
+
+.string .optional {
+  flex-grow: 1;
+}
+
+.other_category-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 400px) {
+  .assault-category-name {
+    font-size: 16px;
+  }
+  .other-category-name {
+    font-size: 16px;
+  }
+}
