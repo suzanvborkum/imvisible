@@ -1,5 +1,5 @@
 const otherCheckbox = () => {
-  let other_field = document.querySelector("#other_category_field")
+  let other_field = document.getElementById("other_category_field")
   other_field.style.display = "none";
   document.getElementById("other_category_checkbox").addEventListener("change", (event) => {
     if (!event.target.checked) {
