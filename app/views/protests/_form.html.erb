@@ -16,7 +16,7 @@
     </div>
     <h3><%= t ".location_label" %></h3>
     <div id="select-station-container">
-      <%= f.association :station, as: :select, label_html: { class:"no-label " } %>
+      <%= f.association :station, as: :select, label_html: { class:"no-label" } %>
     </div>
     <h3 class="mt-3"><%= t ".date_label" %></h3>
     <div class="flex-50">
@@ -42,11 +42,15 @@
   </div>
 
   <div class="other_category-input">
-    <label class="label other-category-name"><span><%= t ".other" %></span>
-      <input type="checkbox" class="checkbox" id="other_category_checkbox"/>
-      <span class="check-mark"></span>
-    </label>
-    <%= f.input :other_category, label_html: { class:"no-label" }, input_html: { id: "other_category_field" } %>
+    <div class="other-box">
+      <label class="label other-category-name"><span>Other</span>
+        <input type="checkbox" class="checkbox" id="other_category_checkbox"/>
+        <span class="check-mark"></span>
+      </label>
+    </div>
+    <div class="other-field">
+      <%= f.input :other_category, label_html: { class:"no-label" }, input_html: { id: "other_category_field" } %>
+    </div>
   </div>
 
   <div class="description-box">
