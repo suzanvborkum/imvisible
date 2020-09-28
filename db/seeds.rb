@@ -17,7 +17,7 @@ JSON.parse(open(url).read)["records"].each do |station|
   name = station["fields"]["name"]
   longitude = station["fields"]["lon"]
   latitude = station["fields"]["lat"]
-  Station.create!(name: name, longitude: longitude, latitude: latitude)
+  Station.create(name: name, longitude: longitude, latitude: latitude)
 end
 
 Protest.create!(
