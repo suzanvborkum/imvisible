@@ -93,6 +93,7 @@ en:
       assault_type_label: "Type of assault"
       description_placeholder: "Tell us what happened..."
       protest: "Protest Now"
+      other: "Other"
     index:
       see_all_btn: "See all protests"
       filter: "Filter"
@@ -112,5 +113,8 @@ en:
       protest:  "Protest Now"
       today: "Today's Protests"
       about: "About us"
+  layouts:
+    application:
+      alert_html: "<strong>You're visible!</strong><br>Your protest is now <br> on the map!"
 
 
