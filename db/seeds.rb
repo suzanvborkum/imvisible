@@ -7,7 +7,7 @@ ProtestAssault.destroy_all
 AssaultCategory.destroy_all
 Station.destroy_all
 
-assault_categories = ["verbal", "me siguieron", "toqueteo", "fotos", "gritos", "violación"]
+assault_categories = ["verbal", "me siguieron", "toqueteo", "fotos", "piropos", "violación"]
 assault_categories.each do |category|
   AssaultCategory.create!(name: category)
 end

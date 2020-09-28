@@ -31,7 +31,7 @@ es:
       mission_text_html: "i<strong>m</strong>visible es una plataforma que invita a las mujeres a protestar contra el acoso sexual en el transporte público. Como los casos de acoso pasan todos los días, sentimos que las mujeres deberían tener la oportunidad de alzar la mano cada día"
       follow_imvisible_html: "sigue a i<strong>m</strong>visible:"
       vision_title: "VISIÓN"
-      vision_text_html: "Creemos que es necesario que las mujeres se sientan seguras y empoderadas de compartir el acoso diario. Con cada protesta estamos más cerca de demostrar la magnitud del problema. Los datos recolectados a través de i<strong>m</strong>visible son usados esencialmente para visibilizar y cuantificar el problema."
+      vision_text_html: "Creemos que es necesario que las mujeres se sientan seguras y empoderadas de compartir el acoso diario. Con cada protesta estamos más cerca de demostrar la magnitud del problema. Los datos recolectados a través de <em>i<strong>m</strong>visible</em> son usados esencialmente para visibilizar y cuantificar el problema."
       interest_sites_title: "OTROS SITIOS DE INTERÉS"
       womens_rights: "DERECHOS DE LAS MUJERES"
       un_women: "ONU Mujeres, México"
@@ -46,11 +46,11 @@ es:
       what_will_happen_question: "¿QUÉ VA A PASAR CON MI PROTESTA?"
       what_will_happen_answer: "Tu protesta nos ayuda a estar un paso más cerca de abordar el problema de acoso sexual en el transporte público. Tu protesta es completamente anónima y puedes compartir tanto de tu incidente como tú quieras. Después de protestar, tu protesta estará visible en el mapa y en nuestra lista de protestas."
       involved_question: "¿CÓMO PUEDO SEGUIR INVOLUCRADO?"
-      involved_answer_html: "Si viviste o fuiste testigo de acoso sexual en el transporte público de la CDMX, te  invitamos a protestar. Esta  es la manera más efectiva y segura de hacer el problema visible. También puedes compartir a i<strong>m</strong>visible en tus redes sociales o seguirnos en Instagram y Twitter"
+      involved_answer_html: "Si viviste o fuiste testigo de acoso sexual en el transporte público de la CDMX, te  invitamos a protestar. Esta  es la manera más efectiva y segura de hacer el problema visible. También puedes compartir a <em>i<strong>m</strong>visible</em> en tus redes sociales o seguirnos en Instagram y Twitter"
       psychological_help_question_html: "¿PUEDO RECIBIR AYUDA PSICOLÓGICA EN I<strong>M</strong>VISBLE?"
-      psychological_help_answer_html: "i<strong>m</strong>visible es una plataforma para protestar. Si experimentaste acoso sexual y necesitas asesoramiento, te aconsejamos a buscar ayuda profesional."
+      psychological_help_answer_html: "<em>i<strong>m</strong>visible</em> es una plataforma para protestar. Si experimentaste acoso sexual y necesitas asesoramiento, te aconsejamos a buscar ayuda profesional."
       other_cities_question_html: "¿I<strong>M</strong>VISIBLE ESTARÁ DISPONIBLE EN OTRAS CIUDADES?"
-      other_cities_answer_html: "i<strong>m</strong>visible fue diseñado para la Ciudad de México, pero mujeres alrededor del mundo sufren de acoso sexual en el transporte público. Nuestro objetivo es que i<strong>m</strong>visible esté disponible en más ciudades en el futuro. Si quieres contactarnos para implementar i<strong>m</strong>visible en tu ciudad, mándanos un mensaje por Instagram o Twitter"
+      other_cities_answer_html: "i<strong>m</strong>visible fue diseñado para la Ciudad de México, pero mujeres alrededor del mundo sufren de acoso sexual en el transporte público. Nuestro objetivo es que <em>i<strong>m</strong>visible</em> esté disponible en más ciudades en el futuro. Si quieres contactarnos para implementar <em>i<strong>m</strong>visible</em> en tu ciudad, mándanos un mensaje por Instagram o Twitter"
   protests:
     new:
       incident: "DETALLES DEL INCIDENTE"
@@ -62,6 +62,7 @@ es:
       assault_type_label: "¿Qué tipo de acoso sucedió?"
       description_placeholder: "Cuéntanos tu historia..."
       protest: "Protesta Ahora"
+      other: "Otro"
     index:
       see_all_btn: "Ve todas las protestas"
       filter: "Filtro"
@@ -81,6 +82,9 @@ es:
       protest:  "Protesta Ahora"
       today: "Protestas de Hoy"
       about: "Sobre Nosotros"
+  layouts:
+    application:
+      alert_html: "<strong>!Eres visible!</strong><br>Tu protesta está <br> en el mapa"
 
 
 
