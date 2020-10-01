@@ -1,7 +1,7 @@
 .fa-bars {
   color: $deepgreen;
-  padding-top: 10px;
-  margin-left: 10px;
+  // padding-top: 10px;
+  // margin-left: 10px;
   font-size: 30px;
 }
 
@@ -31,4 +31,38 @@
   color: $deepgreen;
   text-decoration: none;
   cursor: pointer;
+}
+
+.navbar {
+  margin: 0px;
+  width: 100%;
+  background-color: rgba(100, 100, 100, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+#title {
+  margin: 0px;
+  font-size: 26px;
+  text-align: center;
+  color: rgb(50, 35, 67);
+}
+
+.donate {
+  border-radius: 35px;
+  background-color: #005243;
+  color: white;
+  width: 100px;
+}
+
+.justify-left {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.padding-none {
+  padding: 0px;
 }
