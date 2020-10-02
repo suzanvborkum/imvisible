@@ -36,13 +36,14 @@
 .navbar {
   margin: 0px;
   width: 100%;
-  background-color: rgba(100, 100, 100, 0);
+  background-image: linear-gradient(rgba(50, 50, 50, 1), rgba(196, 196, 196, 0));
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
-
-
 
 #title {
   margin: 0px;
@@ -52,10 +53,20 @@
 }
 
 .donate {
-  border-radius: 35px;
-  background-color: #005243;
-  color: white;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(50, 35, 67);
   width: 100px;
+  border-color: rgb(50, 35, 67);
+  border-width: 2px;
+  transition: 0.3s;
+}
+
+
+.donate:hover {
+  background-color: rgb(50, 35, 67);
+  color: white;
+  transition: 0.5s;
 }
 
 .justify-left {
