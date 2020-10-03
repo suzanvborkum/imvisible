@@ -1,0 +1,42 @@
+#footer {
+  width: 100%;
+  background-color: rgba(2, 61, 50, 0.90);
+  color: white;
+  // position: aboslute;
+  z-index: 10000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 10px;
+  font-size: 14px;
+  a {
+    color: white;
+  }
+  a:hover {
+    color: rgb(202, 189, 220);
+    text-decoration: none;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.icon-margin {
+  margin: 0px 5px 0px 0px;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+// .icons {
+//   font-size: 20px;
+// }
+
+.justify-right {
+  justify-content: flex-end;
+}
