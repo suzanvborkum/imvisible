@@ -13,7 +13,8 @@ const initMapbox = () => {
       maxZoom : 17,
       minZoom : 11
     });
-    map.addControl(new mapboxgl.NavigationControl());
+    var nav = new mapboxgl.NavigationControl();
+    map.addControl(nav, 'bottom-right');
     const markersArray = []
 
     const markers = JSON.parse(mapElement.dataset.markers);
