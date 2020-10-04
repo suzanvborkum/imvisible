@@ -2,8 +2,9 @@
   width: 100%;
   background-color: rgba(2, 61, 50, 0.90);
   color: white;
-  // position: aboslute;
-  z-index: 10000000;
+  position: static;
+  bottom: 0;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   padding: 16px 10px;
