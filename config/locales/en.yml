@@ -31,6 +31,9 @@
 
 en:
   pages:
+    support:
+      text_1_html: "<em>i<strong>m</strong>visible</em> would not exist without the brave women who protest on our platform. We are so proud to continue to create a space where women can raise their hand. Help us and these women by addressing the problem and making a change."
+      text_2_html: "Soon we will start a donation campaign to keep <em>i<strong>m</strong>visible</em> alive. In the meantime, join us on Instagram or Twitter to hear about our steps to creating a safer public transport."
     home:
       protest: "Protest Now"
       visit_incidents: "or visit the incidents map"
@@ -113,6 +116,7 @@ en:
       protest:  "Protest Now"
       today: "Today's Protests"
       about: "About us"
+      donate: "DONATE"
   layouts:
     application:
       alert_html: "<strong>You're visible!</strong><br>Your protest is now <br> on the map!"
