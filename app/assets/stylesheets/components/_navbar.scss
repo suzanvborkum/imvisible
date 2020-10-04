@@ -36,7 +36,7 @@
 .navbar {
   margin: 0px;
   width: 100vw;
-  // background-image: linear-gradient(#BEBEBE, rgba(196, 196, 196, 0));
+  background-image: linear-gradient(white, rgba(196, 196, 196, 0));
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,6 +61,19 @@
   border-width: 1px;
   transition: 0.3s;
   font-weight: 200;
+}
+
+@media screen and (max-width: 2000px) {
+  .donate {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .donate {
+    width: 110px;
+    font-size: 14px;
+  }
 }
 
 .fa-heart {
