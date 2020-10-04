@@ -36,7 +36,7 @@
 .navbar {
   margin: 0px;
   width: 100vw;
-  background-image: linear-gradient(rgba(90, 90, 90, 1), rgba(196, 196, 196, 0));
+  // background-image: linear-gradient(#BEBEBE, rgba(196, 196, 196, 0));
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,8 +58,13 @@
   color: rgb(50, 35, 67);
   width: 120px;
   border-color: rgb(50, 35, 67);
-  border-width: 2px;
+  border-width: 1px;
   transition: 0.3s;
+  font-weight: 200;
+}
+
+.fa-heart {
+  font-size: 14px;
 }
 
 
