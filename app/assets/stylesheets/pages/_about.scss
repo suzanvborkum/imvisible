@@ -1,86 +1,81 @@
 .page-about {
-  position: relative;
+  //position: relative;
   height: 100%;
   overflow: hidden;
 }
 
-.about-page {
+.mission-space {
+  height: 600px;
   width: 100%;
-}
-
-.circle-space {
-  height: 850px;
-  width: 520px;
-  position: relative;
+  background-image: url("metro-woman.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .about-header {
   padding-top: 80px;
-  color: #003D32;
+  color: white;
   font-size: 24px;
 }
 
 .about-name {
-  color: #003D32;
+  color: white;
   font-size: 36px;
   font-weight: 200;
   letter-spacing: 10px;
 }
 
 @media screen and (max-width: 2400px) {
-  .circle-space {
-    left: 34vw;
+  .circles-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mission-space {
+    height: 600px;
   }
 }
 
-@media screen and (max-width: 1700px) {
-  .circle-space {
-    left: 28vw;
-  }
-}
 
-@media screen and (max-width: 1200px) {
-  .circle-space {
-    left: 19vw;
-  }
-}
 
-@media screen and (max-width: 800px) {
-  .circle-space {
-    left: 4vw;
+@media screen and (max-width: 678px) {
+  .circles-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-}
 
-@media screen and (max-width: 550px) {
-  .circle-space {
-    left: -17vw;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .circle-space {
-    left: -33vw;
+  .mission-space {
+    height: 900px;
   }
 }
 
 #about-mission-circle {
-  position: absolute;
-  width: 360px;
-  height: 360px;
+  position: relative;
+  background-color: rgba(255,255, 255, 0.8);
+  width: 320px;
+  height: 320px;
   border: 1px solid #003D32;
   border-radius: 50%;
-  top: 40px;
-  left: 70px;
+  //top: 200px;
+  //left: 70px;
+  font-size: 14px;
+  margin: 10px;
  }
 
  #about-vision-circle {
-  position: absolute;
-  top: 400px;
-  left: 168px;
-  width: 360px;
-  height: 360px;
+  background-color: rgba(255,255, 255, 0.8);
+  position: relative;
+  //top: 200px;
+  //left: 400px;
+  width: 320px;
+  height: 320px;
   border: 1px solid #003D32;
   border-radius: 50%;
+  font-size: 14px;
+  margin: 10px;
  }
 
 #about-share-circle {
@@ -140,16 +135,16 @@
 .mission-text {
   position: absolute;
   width: 230px;
-  left: 66px;
-  top: 52px;
+  left: 47px;
+  top: 56px;
   color: #003D32;
 }
 
 .vision-text {
   position: absolute;
   width: 280px;
-  left: 40px;
-  top: 52px;
+  left: 22px;
+  top: 56px;
   color: #003D32;
 }
 
