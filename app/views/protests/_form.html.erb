@@ -1,5 +1,6 @@
 <%= simple_form_for @protest do |f| %>
     <!-- Witness -->
+  <div id="experience-question">
     <div class="experienced-select flex-50 mr-1">
       <div class="form-check-experienced experienced">
         <input class="form-check-experienced-input radio_buttons optional" type="radio" value="0" name="protest[experienced]" id="protest_experienced_0">
@@ -14,6 +15,9 @@
         </label>
       </div>
     </div>
+  </div>
+
+  <div id="location-time-question"></div>
     <h3><%= t ".location_label" %></h3>
     <div id="select-station-container">
       <%= f.association :station, as: :select, label_html: { class:"no-label" } %>
@@ -27,42 +31,46 @@
         <%= f.input :time, placeholder: "7:00 - 8:00", label_html: { class:"no-label" } %>
       </div>
     </div>
+  </div>
 
+  <div id="description-question">
     <h3><%= t ".assault_type_label" %></h2>
     <div class="row">
-        <% AssaultCategory.all.each do |category| %>
-        <div class="col-6">
-          <label class="label assault-category-name" for="protest_assault_category_ids_<%= category.id %>">
-          <span><%= category.name.capitalize %></span>
-          <input type="checkbox" class="checkbox" value="<%= category.id %>" name="protest[assault_category_ids][]" id="protest_assault_category_ids_<%= category.id %>"/>
-          <span class="check-mark"></span>
-          </label>
-        </div>
-        <% end %>
-  </div>
-
-  <div class="other_category-input">
-    <div class="other-box">
-      <label class="label other-category-name"><span><%= t ".other" %></span>
-        <input type="checkbox" class="checkbox" id="other_category_checkbox"/>
+      <% AssaultCategory.all.each do |category| %>
+      <div class="col-6">
+        <label class="label assault-category-name" for="protest_assault_category_ids_<%= category.id %>">
+        <span><%= category.name.capitalize %></span>
+        <input type="checkbox" class="checkbox" value="<%= category.id %>" name="protest[assault_category_ids][]" id="protest_assault_category_ids_<%= category.id %>"/>
         <span class="check-mark"></span>
-      </label>
+        </label>
+      </div>
+      <% end %>
     </div>
-    <div class="other-field">
-      <%= f.input :other_category, label_html: { class:"no-label" }, input_html: { id: "other_category_field" } %>
+
+    <div class="other_category-input">
+      <div class="other-box">
+        <label class="label other-category-name"><span><%= t ".other" %></span>
+          <input type="checkbox" class="checkbox" id="other_category_checkbox"/>
+          <span class="check-mark"></span>
+        </label>
+      </div>
+      <div class="other-field">
+        <%= f.input :other_category, label_html: { class:"no-label" }, input_html: { id: "other_category_field" } %>
+      </div>
+    </div>
+
+    <div class="description-box">
+      <%= f.input :description, placeholder: t(".description_placeholder"), label_html: { class:"no-label" }  %>
     </div>
   </div>
 
-  <div class="description-box">
-    <%= f.input :description, placeholder: t(".description_placeholder"), label_html: { class:"no-label" }  %>
-  </div>
-  <div class="center-button">
-    <div class="button-div">
-      <%= f.button :submit, t(".protest"), class: 'btn protest-btn' %>
+    <div class="center-button">
+      <div class="button-div">
+        <%= f.button :submit, t(".protest"), class: 'btn protest-btn' %>
+      </div>
     </div>
-  </div>
+
 <% end %>
-
 
 
 
