@@ -37,6 +37,9 @@ gem 'faker'
 gem 'date_format'
 gem 'devise'
 
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', '>= 1.0.0.rc'
+
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
