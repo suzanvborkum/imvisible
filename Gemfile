@@ -35,6 +35,7 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'faker'
 gem 'date_format'
+gem 'devise'
 
 group :development, :test do
   gem 'pry-byebug'
