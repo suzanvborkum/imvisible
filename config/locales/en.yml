@@ -100,6 +100,7 @@ en:
       description_placeholder: "Tell us what happened..."
       protest: "Protest Now"
       other: "Other"
+      disclaimer: "*By protesting the user agrees that all content provided in the protest will be displayed on the imvisible website and can be used by the owners for other communication activities."
     index:
       see_all_btn: "See all protests"
       filter: "Filter"
