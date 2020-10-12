@@ -69,6 +69,7 @@ es:
       description_placeholder: "Cuéntanos tu historia..."
       protest: "Protesta Ahora"
       other: "Otro"
+      disclaimer: "*Al protestar el usuario accede a que todo el contenido proveído en su protesta será mostrado en la página de imvisible y puede ser usado por los responsables  de la página para otras actividades comunicativas."
     index:
       see_all_btn: "Ve todas las protestas"
       filter: "Filtro"
