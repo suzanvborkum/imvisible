@@ -9,11 +9,21 @@
 }
 
 .support-btn {
+  width: 200px;
+  color: rgb(50, 35, 67);
+  border-radius: 35px;
+  background-color: white;
+  border: solid 1px rgb(50, 35, 67);
+  font-size: 14px;
+}
+
+.support-large-btn {
   width: 265px;
   color: white;
-  border-radius: 5px;
+  border-radius: 35px;
   background-color: rgb(50, 35, 67);
   border: none;
+  font-size: 18px;
 }
 
 .support-header {
