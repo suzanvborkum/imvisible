@@ -33,10 +33,11 @@ en:
   pages:
     support:
       text_1_html: "<em>i<strong>m</strong>visible</em> would not exist without the brave women who protest on our platform. We are so proud to continue to create a space where women can raise their hand. Help us and these women by addressing the problem and making a change."
-      text_2_html: "Soon we will start a donation campaign to keep <em>i<strong>m</strong>visible</em> alive. In the meantime, join us on Instagram or Twitter to hear about our steps to creating a safer public transport."
+      text_2_html: "Join us on Instagram or Twitter to hear about our steps to creating a safer public transport."
       ambassador: "Become an ambassador"
       twitter: "Follow us on Twitter"
       instagram: "Follow us on Instagram"
+      donate-button: "Donate Now"
     home:
       protest: "Protest Now"
       visit_incidents: "or visit the incidents map"
