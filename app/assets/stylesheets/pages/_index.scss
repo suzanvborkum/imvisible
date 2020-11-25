@@ -47,7 +47,7 @@ body {
 .protest-details {
   font-family: $body-font;
   font-weight: 500;
-  color: rgba(203, 188, 220, 1);
+  color: $light-gray;
   padding: 0px 20px;
 }
 
@@ -67,11 +67,11 @@ body {
   font-family: $body-font;
   color: white;
   padding: 10px 16px;
-  border-radius: 35px;
+  border-radius: 4px;
   border-width: 4px;
   font-size: 16px;
   font-weight: 350;
-  background-color: #322343;
+  background-color: #02775B;
 }
 
 .index-buttons {
