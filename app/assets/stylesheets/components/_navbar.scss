@@ -9,7 +9,7 @@
   color: $deepgreen;
   padding: 12px 5px 5px 5px;
   font-weight: 500;
-  border-bottom: solid 0.1px lightgrey;
+  border-bottom: solid 0.1px  #F2F5F9;
 }
 
 .dropdown-menu {
@@ -61,11 +61,11 @@
 }
 
 .donate {
-  border-radius: 35px;
+  border-radius: 4px;
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(50, 35, 67);
+  color: #02775B;
   width: 120px;
-  border-color: rgb(50, 35, 67);
+  border-color: #02775B;
   border-width: 1px;
   transition: 0.3s;
   font-weight: 200;
@@ -90,7 +90,7 @@
 
 
 .donate:hover {
-  background-color: rgb(50, 35, 67);
+  background-color: #02775B;
   color: white;
   transition: 0.5s;
 }
